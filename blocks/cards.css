@@ -1,0 +1,521 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  max-width: 1359px;
+}
+
+.card-sm {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 1;
+  margin-right: 16px;
+  margin-bottom: 17px;
+  padding: 115px 30px 0;
+  width: calc(32% - 8px);
+  height: 500px;
+  border-radius: 4px;
+  background-color: #1b4638;
+}
+
+.card-sm__description {
+  margin-top: 0;
+  margin-bottom: 23px;
+  font-family: 'Sharp Grotesk DB Cyr Book 20';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.card-sm__title {
+  margin-top: 0;
+  margin-bottom: 45px;
+  max-width: 333px;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  text-align: center;
+  color: #5dc397;
+}
+
+.card-sm__button {
+  max-width: 334px;
+  width: 100%;
+  height: 54px;
+  background: url(../images/cards/temp-button.jpg) no-repeat;
+  border: none;
+  border-radius: 34px;
+}
+
+.card-lg {
+  order: 2;
+  width: calc(68% - 8px);
+  height: 500px;
+  background: #fff url(../images/cards/card-two-bg.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+}
+
+.card-md {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(50% - 11px);
+  height: 700px;
+  background-size: cover;
+  border-radius: 4px;
+}
+
+.card-md_content_bottom {
+  justify-content: flex-end;
+  padding-bottom: 49px;
+}
+
+.card-md_content_top {
+  padding-top: 110px;
+}
+
+.card-md__link {
+  position: absolute;
+  display: block;
+  top: 15px;
+  right: 15px;
+  width: 48px;
+  height: 48px;
+  background: url(../images/cards/icons/link-icon.svg) no-repeat;
+  background-size: contain;
+}
+
+.card-md__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.card-md__tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 4px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.card-md__tags-item {
+  padding: 1px 8px;
+  font-family: 'Sharp Grotesk DB Cyr Book 20';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 19px;
+}
+
+.card-three {
+  order: 3;
+  margin-right: 22px;
+  background: #fff url(../images/cards/card-three-bg.jpg) center no-repeat;
+}
+
+.card-three__title {
+  max-width: 223px;
+  font-family: 'Sharp Grotesk DB Cyr Book 20';
+  font-weight: 400;
+  font-size: 67px;
+  line-height: 60px;
+  color: #eecf74;
+}
+
+.card-three__tags-list {
+  max-width: 360px;
+}
+
+.card-three__tags-item {
+  color: #1b4638;
+  background-color: #eecf74;
+}
+
+.card-four {
+  order: 4;
+  background: #fff url(../images/cards/card-four-bg.jpg) center no-repeat;
+}
+
+.card-four__title {
+  max-width: 318px;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 75px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: #1b4638;
+}
+
+.card-four__tags-list {
+  max-width: 336px;
+}
+
+.card-four__tags-item {
+  color: #fff;
+  background-color: #1b4638;
+}
+
+@media screen and (max-width: 1499px) {
+  .cards {
+    padding-left: 70px;
+    padding-right: 70px;
+    max-width: 1499px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card-sm {
+    padding-top: 70px;
+    height: 350px;
+  }
+
+  .card-sm-xl {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .card-sm__title {
+    max-width: 450px;
+  }
+
+  .card-md {
+    height: 500px;
+  }
+
+  .card-md_content_top {
+    padding-top: 83px;
+  }
+
+  .card-three {
+    margin-bottom: 17px;
+    order: 2;
+  }
+
+  .card-four {
+    order: 3;
+  }
+
+  .card-lg {
+    order: 4;
+  }
+
+  .card-lg-xl {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .card-md__tags-item {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .card-md {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .card-md__tags-item-md_hidden {
+    display: none;
+  }
+
+  .card-three__tags-list {
+    max-width: 300px;
+  }
+
+  .card-four__title {
+    font-size: 67px;
+    line-height: 64px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .cards {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 880px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    padding: 26px 20px;
+  }
+
+  .card-sm {
+    margin-bottom: 12px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 267px;
+  }
+
+  .card-sm__description {
+    margin-bottom: 13px;
+  }
+
+  .card-sm__title {
+    margin-bottom: 43px;
+    max-width: 399px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .card-sm-xl {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .card-lg {
+    order: 4;
+    height: 403px;
+    background: #fff url(../images/cards/card-two-bg-768.jpg) center no-repeat;
+  }
+
+  .card-lg-xl {
+    width: 100%;
+  }
+
+  .card-md {
+    width: calc(50% - 6px);
+    height: 372px;
+  }
+
+  .card-md_content_top {
+    padding-top: 83px;
+  }
+
+  .card-md_content-md_top {
+    justify-content: flex-start;
+    padding-top: 83px;
+    padding-bottom: 0;
+  }
+
+  .card-md__tags-item-sm_hidden {
+    display: none;
+  }
+
+  .card-three {
+    order: 2;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    background: #fff url(../images/cards/card-three-bg-768.jpg) center no-repeat;
+  }
+
+  .card-three__title {
+    margin-bottom: 83px;
+  }
+
+  .card-three__tags-list {
+    max-width: 315px;
+  }
+
+  .card-four {
+    order: 3;
+    background: #fff url(../images/cards/card-four-bg-768.jpg) center no-repeat;
+  }
+
+  .card-four__title {
+    margin-bottom: 74px;
+    max-width: 284px;
+    font-size: 67px;
+    line-height: 64px;
+  }
+
+  .card-four__tags-list {
+    max-width: 298px;
+  }
+
+  .card-four__tags-item {
+    color: #1b4638;
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .card-md__tags-list {
+    display: none;
+  }
+
+  .card-three__title {
+    font-size: 47px;
+    line-height: 45px;
+  }
+
+  .card-four__title {
+    font-size: 47px;
+    line-height: 43px;
+  }
+
+  .card-lg {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .card-md {
+    height: 250px;
+  }
+
+  .card-three__title {
+    max-width: 160px;
+    font-size: 32px;
+    line-height: 30px;
+  }
+
+  .card-four__title {
+    font-size: 32px;
+    line-height: 30px;
+  }
+
+  .card-lg {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .card-sm {
+    padding-bottom: 20px;
+    height: 220px;
+  }
+
+  .card-sm__description {
+    display: none;
+  }
+
+  .card-sm__title {
+    margin-bottom: 25px;
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .card-lg {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .card-md {
+    height: 200px;
+  }
+
+  .card-md__link {
+    display: none;
+  }
+
+  .card-md_content_top {
+    padding-top: 50px;
+  }
+
+  .card-md_content-md_top {
+    padding-top: 50px;
+  }
+
+  .card-three__title {
+    max-width: 75px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .card-four__title {
+    max-width: 85px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .card-lg {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cards {
+    padding: 20px 12px 20px;
+  }
+
+  .card-sm {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    height: 121px;
+  }
+
+  .card-sm__description {
+    display: none;
+  }
+
+  .card-sm__title {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .card-sm__button {
+    max-width: 249px;
+    height: 40px;
+    background: url(../images/cards/temp-button-320.jpg) no-repeat;
+  }
+
+  .card-md {
+    height: 148px;
+  }
+
+  .card-md_content_top {
+    padding-top: 17px;
+  }
+
+  .card-md_content-md_top {
+    padding-top: 15px;
+  }
+
+  .card-md__link {
+    display: none;
+  }
+
+  .card-md__tags-list {
+    display: none;
+  }
+
+  .card-three {
+    order: 3;
+    margin-right: 0;
+    background: url(../images/cards/card-three-bg-320.jpg) center no-repeat;
+    background-size: cover;
+  }
+
+  .card-three__title {
+    max-width: 75px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .card-four {
+    order: 2;
+    margin-right: 12px;
+    background: url(../images/cards/card-four-bg-320.jpg) center no-repeat;
+    background-size: cover;
+  }
+
+  .card-four__title {
+    max-width: 85px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .card-lg {
+    height: 163px;
+    background: url(../images/cards/card-two-bg-320.jpg) center no-repeat;
+    background-size: cover;
+  }
+}

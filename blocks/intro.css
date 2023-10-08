@@ -1,0 +1,118 @@
+.intro {
+  padding-top: 61px;
+  margin: 0 auto;
+  max-width: 1359px;
+}
+
+.intro__title {
+  margin-top: 0;
+  margin-bottom: 13px;
+  max-width: 980px;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 80px;
+  color: #1b4638;
+}
+
+.intro__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 1024px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1b4638;
+}
+
+.intro__another-text {
+  display: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 718px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #1b4638;
+}
+
+@media screen and (max-width: 1499px) {
+  .intro {
+    padding-left: 70px;
+    padding-right: 70px;
+    max-width: 1499px;
+  }
+
+  .intro__text {
+    max-width: 890px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .intro__title {
+    max-width: 580px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .intro {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 880px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    padding: 40px 20px 0;
+    max-width: 768px;
+  }
+
+  .intro__title {
+    margin-bottom: 16px;
+    max-width: 563px;
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .intro__text {
+    display: none;
+  }
+
+  .intro__another-text {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .intro__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .intro__another-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .intro {
+    padding: 18px 12px 0;
+  }
+
+  .intro__title {
+    margin-bottom: 0;
+    max-width: 278px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .intro__another-text {
+    display: none;
+  }
+}
