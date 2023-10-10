@@ -1,0 +1,342 @@
+.footer {
+  box-sizing: border-box;
+  margin-bottom: 47px;
+  background-color: #f1f4f4;
+}
+
+.footer__container {
+  margin: 0 auto;
+  padding-top: 52px;
+  padding-bottom: 32px;
+  max-width: 1359px;
+}
+
+.footer__actions {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.footer__socials {
+  max-width: 488px;
+}
+
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b4638;
+}
+
+.footer__text {
+  margin-top: 0;
+  margin-bottom: 24px;
+  max-width: 432px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.176px;
+  color: #1e1e1e;
+}
+
+.footer__links-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 7px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.footer__link {
+  display: block;
+  height: 29px;
+}
+
+.footer__link_type_vk {
+  width: 64px;
+  background: url(../images/footer/icons/vk.svg) no-repeat;
+  background-size: contain;
+}
+
+.footer__link_type_telegram {
+  width: 110px;
+  background: url(../images/footer/icons/telegram.svg) no-repeat;
+  background-size: contain;
+}
+
+.footer__link_type_youtube {
+  display: none;
+  width: 102px;
+  background: url(../images/footer/icons/youtube.svg) no-repeat;
+  background-size: contain;
+}
+
+.footer__link_type_vc-ru {
+  display: none;
+  width: 84px;
+  background: url(../images/footer/icons/vc-ru.svg) no-repeat;
+  background-size: contain;
+}
+
+.footer__link_type_ya-dzen {
+  display: none;
+  width: 133px;
+  height: 30px;
+  background: url(../images/footer/icons/ya-dzen.svg) no-repeat;
+  background-size: contain;
+}
+
+.footer__subscribe {
+  max-width: 432px;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 328px;
+}
+
+.footer__input {
+  box-sizing: border-box;
+  margin-bottom: 9px;
+  padding: 0 12px;
+  height: 50px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #50776a;
+  outline: none;
+  border: 1px solid #50776a;
+  border-radius: 4px;
+}
+
+.footer__input::placeholder {
+  color: #50776a;
+}
+
+.footer__submit-button {
+  box-sizing: border-box;
+  margin-bottom: 14px;
+  padding: 18px 28px;
+  min-height: 50px;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+  background-color: #5dc397;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer__submit-button::after {
+  display: inline-block;
+  margin-left: 10px;
+  width: 16px;
+  height: 12px;
+  content: "";
+  background: url(../images/footer/icons/arrow-right.svg) center no-repeat;
+  background-size: cover;
+}
+
+.footer__policy {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Sharp Grotesk DB Cyr Book 20';
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #50776a;
+}
+
+.footer__policy-link {
+  display: block;
+  color: #50776a;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-family: 'Sharp Grotesk DB Cyr Book 20';
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #8DA9A8;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.footer__trademark {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 405px;
+}
+
+.footer__made-by {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 432px;
+  width: 100%;
+}
+
+.footer__copyright {
+  display: block;
+}
+
+@media screen and (max-width: 1499px) {
+  .footer {
+    padding-left: 70px;
+    padding-right: 70px;
+    max-width: 1499px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .footer__socials {
+    max-width: 328px;
+  }
+
+  .footer__subscribe {
+    max-width: 328px;
+  }
+
+  .footer__made-by {
+    max-width: 328px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .footer {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 880px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer__actions {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 55px;
+  }
+
+  .footer__socials {
+    margin-bottom: 36px;
+    max-width: 699px;
+  }
+
+  .footer__made-by {
+    max-width: 208px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 768px;
+  }
+
+  .footer__container {
+    padding-top: 45px;
+    padding-bottom: 41px;
+  }
+
+  .footer__title_type_socials {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 22px;
+  }
+
+  .footer__links-list {
+    max-width: 300px;
+  }
+
+  .footer__text {
+    display: none;
+  }
+
+  .footer__link_type_youtube {
+    display: block;
+  }
+
+  .footer__link_type_vc-ru {
+    display: block;
+  }
+
+  .footer__link_type_ya-dzen {
+    display: block;
+  }
+
+  .footer__title_type_subscribe {
+    margin-bottom: 15px;
+  }
+
+  .footer__form {
+    max-width: 294px;
+  }
+
+  .footer__made-by {
+    max-width: 208px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .footer__info {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 16px;
+  }
+
+  .footer__trademark {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    padding-left: 12px;
+    padding-right: 12px;
+    max-width: 320px;
+  }
+
+  .footer__container {
+    padding-top: 28px;
+    padding-bottom: 8px;
+  }
+
+  .footer__actions {
+    padding-bottom: 50px;
+  }
+
+  .footer__title_type_socials {
+    max-width: 240px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .footer__title_type_subscribe {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .footer__trademark {
+    max-width: 202px;
+  }
+
+  .footer__company {
+    display: block;
+    margin-top: 8px;
+    max-width: 201px;
+  }
+}
