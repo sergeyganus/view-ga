@@ -61,115 +61,213 @@
           </p>
         </section>
         <section class="cards">
-          <div class="card-sm card-sm-xl animated">
+          <div class="card-sm card-sm-xl card-one animated">
             <div class="front">
-              <p class="card-sm__description">Бронирование</p>
-              <h2 class="card-sm__title">Выбрать номер</h2>
-              <button class="card-sm__button"></button>
+              <div class="card-sm__container card-one__container">
+                <p class="card-sm__description">Бронирование</p>
+                <h2 class="card-sm__title">Выбрать номер</h2>
+                <button class="card-sm__button"></button>
+              </div>
             </div>
             <div class="back">
-              <p class="card-sm__description">Другое описание</p>
-              <h2 class="card-sm__title">Другой заголовок</h2>
+              <div class="card-sm__container card-one__container">
+                <p class="card-sm__description">Другое описание</p>
+                <h2 class="card-sm__title">Другой заголовок</h2>
+              </div>
             </div>
           </div>
-          <div class="card-lg card-lg-xl">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LjZxeSne67E?autoplay=1&mute=1&controls=0&rel=0" title="Видео" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="card-lg card-lg-xl card-two">
+            <div class="front">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LjZxeSne67E?autoplay=1&mute=1&controls=0&rel=0" title="Видео"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </div>
           <div class="card-md card-three animated">
-            <div class="front card-md_content_bottom card-md_content-md_top">
-              <a class="card-md__link" href="#" title="Подробнее"></a>
-              <h2 class="card-md__title card-three__title">Forest SPA</h2>
-              <ul class="card-md__tags-list card-three__tags-list">
-                <li class="card-md__tags-item card-three__tags-item">коттеджи</li>
-                <li class="card-md__tags-item card-three__tags-item">лес</li>
-                <li class="card-md__tags-item card-three__tags-item">спа</li>
-                <li class="card-md__tags-item card-three__tags-item">бассейн</li>
-                <li class="card-md__tags-item card-three__tags-item">ресторан</li>
-                <li class="card-md__tags-item card-md__tags-item-md_hidden card-three__tags-item">детская и спортивная площадки</li>
-              </ul>
+            <div class="front">
+              <div class="card-md__image-wrap">
+                <picture class="card-md__picture">
+                  <source srcset="./images/cards/card-three-bg-320.jpg" media="(max-width: 320px)">
+                  <source srcset="./images/cards/card-three-bg-768.jpg" media="(max-width: 768px)">
+                  <source srcset="./images/cards/card-three-bg.jpg" media="(min-width: 769px)">
+                  <img class="card-md__image" src="" alt="Forest SPA">
+                </picture>
+              </div>
+              <div class="card-md__container card-md_content_bottom card-md_content-md_top">
+                <a class="card-md__link" href="#" title="Подробнее"></a>
+                <h2 class="card-md__title card-three__title">Forest SPA</h2>
+                <ul class="card-md__tags-list card-three__tags-list">
+                  <li class="card-md__tags-item card-three__tags-item">коттеджи</li>
+                  <li class="card-md__tags-item card-three__tags-item">лес</li>
+                  <li class="card-md__tags-item card-three__tags-item">спа</li>
+                  <li class="card-md__tags-item card-three__tags-item">бассейн</li>
+                  <li class="card-md__tags-item card-three__tags-item">ресторан</li>
+                  <li class="card-md__tags-item card-md__tags-item-md_hidden card-three__tags-item">детская и спортивная площадки</li>
+                </ul>
+              </div>
             </div>
-            <div class="back card-md_content_top">
-              <a class="card-md__link" href="#" title="Подробнее"></a>
-              <h2 class="card-md__title card-four__title">Forest lake</h2>
-              <ul class="card-md__tags-list card-four__tags-list">
-                <li class="card-md__tags-item card-four__tags-item">лес</li>
-                <li class="card-md__tags-item card-four__tags-item">берег озера</li>
-                <li class="card-md__tags-item card-four__tags-item">спа</li>
-                <li class="card-md__tags-item card-four__tags-item">патио на воде</li>
-                <li class="card-md__tags-item card-four__tags-item">водные развлечения</li>
-                <li class="card-md__tags-item card-md__tags-item-sm_hidden card-four__tags-item">баня на воде</li>
-              </ul>
+            <div class="back">
+              <div class="card-md__image-wrap">
+                <picture class="card-md__picture">
+                  <source srcset="./images/cards/card-four-bg-320.jpg" media="(max-width: 320px)">
+                  <source srcset="./images/cards/card-four-bg-768.jpg" media="(max-width: 768px)">
+                  <source srcset="./images/cards/card-four-bg.jpg" media="(min-width: 769px)">
+                  <img class="card-md__image" src="" alt="Forest lake">
+                </picture>
+              </div>
+              <div class="card-md__container card-md_content_top">
+                <a class="card-md__link" href="#" title="Подробнее"></a>
+                <h2 class="card-md__title card-four__title">Forest lake</h2>
+                <ul class="card-md__tags-list card-four__tags-list">
+                  <li class="card-md__tags-item card-four__tags-item">лес</li>
+                  <li class="card-md__tags-item card-four__tags-item">берег озера</li>
+                  <li class="card-md__tags-item card-four__tags-item">спа</li>
+                  <li class="card-md__tags-item card-four__tags-item">патио на воде</li>
+                  <li class="card-md__tags-item card-four__tags-item">водные развлечения</li>
+                  <li class="card-md__tags-item card-md__tags-item-sm_hidden card-four__tags-item">баня на воде</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="card-md card-four animated">
-            <div class="front card-md_content_top">
-              <a class="card-md__link" href="#" title="Подробнее"></a>
-              <h2 class="card-md__title card-four__title">Forest lake</h2>
-              <ul class="card-md__tags-list card-four__tags-list">
-                <li class="card-md__tags-item card-four__tags-item">лес</li>
-                <li class="card-md__tags-item card-four__tags-item">берег озера</li>
-                <li class="card-md__tags-item card-four__tags-item">спа</li>
-                <li class="card-md__tags-item card-four__tags-item">патио на воде</li>
-                <li class="card-md__tags-item card-four__tags-item">водные развлечения</li>
-                <li class="card-md__tags-item card-md__tags-item-sm_hidden card-four__tags-item">баня на воде</li>
-              </ul>
+            <div class="front">
+              <div class="card-md__image-wrap">
+                <picture class="card-md__picture">
+                  <source srcset="./images/cards/card-four-bg-320.jpg" media="(max-width: 320px)">
+                  <source srcset="./images/cards/card-four-bg-768.jpg" media="(max-width: 768px)">
+                  <source srcset="./images/cards/card-four-bg.jpg" media="(min-width: 769px)">
+                  <img class="card-md__image" src="" alt="Forest lake">
+                </picture>
+              </div>
+              <div class="card-md__container card-md_content_top">
+                <a class="card-md__link" href="#" title="Подробнее"></a>
+                <h2 class="card-md__title card-four__title">Forest lake</h2>
+                <ul class="card-md__tags-list card-four__tags-list">
+                  <li class="card-md__tags-item card-four__tags-item">лес</li>
+                  <li class="card-md__tags-item card-four__tags-item">берег озера</li>
+                  <li class="card-md__tags-item card-four__tags-item">спа</li>
+                  <li class="card-md__tags-item card-four__tags-item">патио на воде</li>
+                  <li class="card-md__tags-item card-four__tags-item">водные развлечения</li>
+                  <li class="card-md__tags-item card-md__tags-item-sm_hidden card-four__tags-item">баня на воде</li>
+                </ul>
+              </div>
             </div>
             <div class="back">
             </div>
           </div>
           <div class="card-xl card-five animated">
             <div class="front">
-              <p class="card-xl__description card-five__description">скоро открытие</p>
-              <h2 class="card-xl__title card-five__title">Красное озеро</h2>
-              <ul class="card-xl__tags-list card-five__tags-list">
-                <li class="card-xl__tags-item card-five__tags-item">коттеджи</li>
-                <li class="card-xl__tags-item card-five__tags-item">лес</li>
-                <li class="card-xl__tags-item card-five__tags-item">спа</li>
-                <li class="card-xl__tags-item card-five__tags-item">бассейн</li>
-                <li class="card-xl__tags-item card-five__tags-item">ресторан</li>
-                <li class="card-xl__tags-item card-five__tags-item">детская и спортивная площадки</li>
-              </ul>
+              <div class="card-xl__image-wrap">
+                <picture class="card-xl__picture">
+                  <source srcset="./images/cards/card-five-bg-320.jpg" media="(max-width: 320px)">
+                  <source srcset="./images/cards/card-five-bg-768.jpg" media="(max-width: 768px)">
+                  <source srcset="./images/cards/card-five-bg.jpg" media="(min-width: 769px)">
+                  <img class="card-xl__image card-five__image" src="" alt="Красное озеро">
+                </picture>
+              </div>
+              <div class="card-xl__container card-five__container">
+                <p class="card-xl__description card-five__description">скоро открытие</p>
+                <h2 class="card-xl__title card-five__title">Красное озеро</h2>
+                <ul class="card-xl__tags-list card-five__tags-list">
+                  <li class="card-xl__tags-item card-five__tags-item">коттеджи</li>
+                  <li class="card-xl__tags-item card-five__tags-item">лес</li>
+                  <li class="card-xl__tags-item card-five__tags-item">спа</li>
+                  <li class="card-xl__tags-item card-five__tags-item">бассейн</li>
+                  <li class="card-xl__tags-item card-five__tags-item">ресторан</li>
+                  <li class="card-xl__tags-item card-five__tags-item">детская и спортивная площадки</li>
+                </ul>
+              </div>
             </div>
             <div class="back">
             </div>
           </div>
           <div class="card-md card-six animated">
-            <div class="front card-md_content_bottom">
-              <a class="card-md__link" href="#" title="Подробнее"></a>
-              <div class="card-md__label card-six__label">Акция</div>
-              <h2 class="card-md__title card-six__title">1 час русской бани в подарок!</h2>
-              <p class="card-md__text card-six__text">
-                Получите 1 час бани в подарок при бронировании проживания по тарифу «VIEW GA» (Сроки акции ограничены)
-              </p>
+            <div class="front">
+              <div class="card-md__container card-md_content_bottom card-six__container">
+                <a class="card-md__link" href="#" title="Подробнее"></a>
+                <div class="card-md__label card-six__label">Акция</div>
+                <h2 class="card-md__title card-six__title">1 час русской бани в подарок!</h2>
+                <p class="card-md__text card-six__text">
+                  Получите 1 час бани в подарок при бронировании проживания по тарифу «VIEW GA» (Сроки акции ограничены)
+                </p>
+              </div>
             </div>
             <div class="back">
             </div>
           </div>
           <div class="card-md card-seven animated">
-            <div class="front card-md_content_top">
-              <a class="card-md__link" href="#" title="Подробнее"></a>
-              <h2 class="card-md__title card-seven__title">Отдых в СПА</h2>
-              <ul class="card-md__tags-list card-seven__tags-list">
-                <li class="card-md__tags-item card-seven__tags-item order-lg-4 order-md-3">баня «по-белому»</li>
-                <li class="card-md__tags-item card-seven__tags-item order-lg-1 order-md-1">чан по-черному под открытым небом</li>
-                <li class="card-md__tags-item card-seven__tags-item order-md-2">фурако с видом на лес</li>
-                <li class="card-md__tags-item card-seven__tags-item order-md-4">видовые бани на воде</li>
-              </ul>
-              <p class="card-md__text card-seven__text">
-                Баня по-белому
-                <span class="card-seven__text-block">Фурако с видом на лес</span>
-                Видовые бани на воде
-              </p>
+            <div class="front">
+              <div class="card-md__image-wrap">
+                <picture class="card-md__picture">
+                  <source srcset="./images/cards/card-seven-bg-320.jpg" media="(max-width: 320px)">
+                  <source srcset="./images/cards/card-seven-bg-768.jpg" media="(max-width: 768px)">
+                  <source srcset="./images/cards/card-seven-bg.jpg" media="(min-width: 769px)">
+                  <img class="card-md__image" src="" alt="Отдых в СПА">
+                </picture>
+              </div>
+              <div class="card-md__container card-md_content_top card-seven__container">
+                <a class="card-md__link" href="#" title="Подробнее"></a>
+                <h2 class="card-md__title card-seven__title">Отдых в СПА</h2>
+                <ul class="card-md__tags-list card-seven__tags-list">
+                  <li class="card-md__tags-item card-seven__tags-item order-lg-4 order-md-3">баня «по-белому»</li>
+                  <li class="card-md__tags-item card-seven__tags-item order-lg-1 order-md-1">чан по-черному под открытым небом</li>
+                  <li class="card-md__tags-item card-seven__tags-item order-md-2">фурако с видом на лес</li>
+                  <li class="card-md__tags-item card-seven__tags-item order-md-4">видовые бани на воде</li>
+                </ul>
+                <p class="card-md__text card-seven__text">
+                  Баня по-белому
+                  <span class="card-seven__text-block">Фурако с видом на лес</span>
+                  Видовые бани на воде
+                </p>
+              </div>
             </div>
             <div class="back">
             </div>
           </div>
+          <!-- <div class="card-lg card-eight animated">
+            <div class="front">
+              <h2 class="card-lg__title card-eight__title">Знаковые события и мероприятия</h2>
+              <ul class="card-lg__tags-list card-eight__tags-list">
+                <li class="card-lg__tags-item card-eight__tags-item">свадьбы</li>
+                <li class="card-lg__tags-item card-eight__tags-item">дни рождения</li>
+                <li class="card-lg__tags-item card-eight__tags-item">корпоративы</li>
+                <li class="card-lg__tags-item card-eight__tags-item">банкеты</li>
+                <li class="card-lg__tags-item card-eight__tags-item">детские мероприятия</li>
+                <li class="card-lg__tags-item card-eight__tags-item">пакетные туры</li>
+              </ul>
+            </div>
+            <div class="back">
+            </div>
+          </div> -->
+          <!-- <div class="card-sm card-nine">
+            <div class="front">
+              <h2 class="card-sm__title card-nine__title">Продукция VIEW GA</h2>
+              <ul class="card-sm__tags-list card-nine__tags-list">
+                <li class="card-sm__tags-item card-nine__tags-item">ягодные настойки</li>
+                <li class="card-sm__tags-item card-nine__tags-item">травяной чай</li>
+                <li class="card-sm__tags-item card-nine__tags-item">свитшоты</li>
+                <li class="card-sm__tags-item card-nine__tags-item">липовый мед</li>
+                <li class="card-sm__tags-item card-nine__tags-item">шоперы</li>
+                <li class="card-sm__tags-item card-nine__tags-item">канцелярия</li>
+              </ul>
+            </div>
+            <div class="back">
+            </div>
+          </div> -->
           <div class="card-xl card-seventeen animated">
             <div class="front">
-              <a class="card-xl__link" href="#" title="Подробнее"></a>
-              <p class="card-xl__description card-seventeen__description">Предложения</p>
-              <h2 class="card-xl__title card-seventeen__title">Стать инвестором View Ga</h2>
+              <div class="card-xl__image-wrap">
+                <picture class="card-xl__picture">
+                  <source srcset="./images/cards/card-seventeen-bg-320.svg" media="(max-width: 320px)">
+                  <source srcset="./images/cards/card-seventeen-bg-768.svg" media="(max-width: 768px)">
+                  <source srcset="./images/cards/card-seventeen-bg.svg" media="(min-width: 769px)">
+                  <img class="card-xl__image card-five__image" src="" alt="Стать инвестором View Ga">
+                </picture>
+              </div>
+              <div class="card-xl__container card-seventeen__container">
+                <a class="card-xl__link" href="#" title="Подробнее"></a>
+                <p class="card-xl__description card-seventeen__description">Предложения</p>
+                <h2 class="card-xl__title card-seventeen__title">Стать инвестором View Ga</h2>
+              </div>
             </div>
             <div class="back">
             </div>

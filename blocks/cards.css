@@ -2,9 +2,6 @@
 .back {
   box-sizing: border-box;
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -38,26 +35,21 @@
 .card-sm {
   box-sizing: border-box;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  order: 1;
-  margin-right: 16px;
   margin-bottom: 17px;
   width: calc(32% - 8px);
   height: 500px;
 }
 
-.card-sm .front {
-  padding: 115px 30px 0;
-  background-color: #1b4638;
-  border-radius: 4px;
-}
-
-.card-sm .back {
-  padding: 115px 30px 0;
-  background-color: grey;
-  border-radius: 4px;
+.card-sm__container {
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .card-sm__description {
@@ -92,14 +84,72 @@
   border-radius: 34px;
 }
 
+.card-sm__tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 4px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.card-sm__tags-item {
+  padding: 1px 8px;
+  font-family: 'Sharp Grotesk DB Cyr Book 20';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 19px;
+}
+
+.card-one {
+  order: 1;
+  margin-right: 16px;
+}
+
+.card-one .front {
+  background-color: #1b4638;
+  border-radius: 4px;
+}
+
+.card-one__container {
+  padding: 115px 30px 0;
+}
+
+.card-one .back {
+  padding: 115px 30px 0;
+  background-color: grey;
+  border-radius: 4px;
+}
+
 .card-lg {
-  order: 2;
+  box-sizing: border-box;
+  position: relative;
   margin-bottom: 17px;
   width: calc(68% - 8px);
   height: 500px;
-  background: #fff url(../images/cards/card-two-bg.jpg) center no-repeat;
-  background-size: cover;
-  border-radius: 4px;
+}
+
+.card-lg__tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 4px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.card-lg__tags-item {
+  padding: 1px 8px;
+  font-family: 'Sharp Grotesk DB Cyr Book 20';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 19px;
 }
 
 .card-md {
@@ -119,6 +169,28 @@
 
 .card-md_content_top {
   padding-top: 110px;
+}
+
+.card-md__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  line-height: 0;
+  border-radius: 4px;
+}
+
+.card-md__container {
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .card-md__link {
@@ -182,16 +254,20 @@
   border-radius: 19px;
 }
 
+.card-two {
+  order: 2;
+}
+
+.card-two .front {
+  background: url(../images/cards/card-two-bg.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+}
+
 .card-three {
   order: 3;
   margin-right: 22px;
   margin-bottom: 17px;
-}
-
-.card-three .front {
-  background: #fff url(../images/cards/card-three-bg.jpg) center no-repeat;
-  background-size: cover;
-  border-radius: 4px;
 }
 
 .card-three .back {
@@ -220,12 +296,6 @@
 
 .card-four {
   order: 4;
-}
-
-.card-four .front {
-  background: #fff url(../images/cards/card-four-bg.jpg) center no-repeat;
-  background-size: cover;
-  border-radius: 4px;
 }
 
 .card-four .back {
@@ -259,6 +329,28 @@
   min-height: 500px;
 }
 
+.card-xl__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  line-height: 0;
+  border-radius: 4px;
+}
+
+.card-xl__container {
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
 .card-xl__link {
   position: absolute;
   display: block;
@@ -266,7 +358,7 @@
   right: 12px;
   width: 50px;
   height: 50px;
-  background: url(../images/offer/link-icon.svg) center no-repeat;
+  background: url(../images/cards/icons/card-seventeen-link-icon.svg) center no-repeat;
   background-size: cover;
 }
 
@@ -317,14 +409,15 @@
   margin-bottom: 17px;
 }
 
-.card-five .front {
+.card-five__image {
+  border: 1px solid #e1eeee;
+  border-radius: 4px;
+}
+
+.card-five__container {
   align-items: flex-start;
   padding-top: 141px;
   padding-left: 65px;
-  background: url(../images/cards/card-five-bg.jpg) center no-repeat;
-  background-size: cover;
-  border: 1px solid #E1EEEE;
-  border-radius: 4px;
 }
 
 .card-five .back {
@@ -365,11 +458,14 @@
 }
 
 .card-six .front {
+  background-color: #1b4638;
+  border-radius: 4px;
+}
+
+.card-six__container {
   align-items: flex-start;
   padding-left: 21px;
   padding-right: 21px;
-  background-color: #1b4638;
-  border-radius: 4px;
 }
 
 .card-six .back {
@@ -400,12 +496,6 @@
 .card-seven {
   order: 7;
   height: 500px;
-}
-
-.card-seven .front {
-  background: url(../images/cards/card-seven-bg.jpg) center no-repeat;
-  background-size: cover;
-  border-radius: 4px;
 }
 
 .card-seven .back {
@@ -439,16 +529,61 @@
   display: none;
 }
 
+.card-eight {
+  order: 8;
+  margin-right: 16px;
+}
+
+.card-eight .front {
+  padding-top: 77px;
+  background: url(../images/cards/card-eight-bg.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+}
+
+.card-eight .back {
+  background: #1b4638;
+  border-radius: 4px;
+}
+
+.card-eight__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  max-width: 510px;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  text-align: center;
+  color: #eecf74;
+}
+
+.card-eight__tags-list {
+  max-width: 424px;
+}
+
+.card-eight__tags-item {
+  color: #1b4638;
+  background-color: #eecf74;
+}
+
+.card-nine {
+  order: 9;
+}
+
+.card-nine .front {
+  background-color: #fff;
+  border: 1px solid #e1eeee;
+  border-radius: 4px;
+}
+
 .card-seventeen {
   order: 17;
   margin-bottom: 21px;
 }
 
-.card-seventeen .front {
+.card-seventeen__container {
   padding-top: 64px;
-  background: #e7f2f1 url(../images/offer/offer-bg.svg) center no-repeat;
-  background-size: cover;
-  border-radius: 4px;
 }
 
 .card-seventeen .back {
@@ -469,7 +604,7 @@
     height: 350px;
   }
 
-  .card-sm .front {
+  .card-one__container {
     padding-top: 70px;
   }
 
@@ -503,7 +638,7 @@
     order: 3;
   }
 
-  .card-lg {
+  .card-two {
     order: 4;
   }
 
@@ -511,11 +646,11 @@
     width: 100%;
   }
 
-  .card-five .front {
+  .card-five__container {
     padding-left: 30px;
   }
 
-  .card-seven .front {
+  .card-seven__container {
     padding-left: 21px;
     padding-right: 21px;
   }
@@ -531,11 +666,6 @@
   .card-md__tags-item {
     font-size: 12px;
     line-height: 22px;
-  }
-
-  .card-md {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   .card-md__tags-item-md_hidden {
@@ -600,7 +730,7 @@
     height: 267px;
   }
 
-  .card-sm .front {
+  .card-one__container {
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -627,9 +757,13 @@
   }
 
   .card-lg {
-    order: 4;
     height: 403px;
+  }
+
+  .card-two {
+    order: 4;
     background: #fff url(../images/cards/card-two-bg-768.jpg) center no-repeat;
+    background-size: cover;
   }
 
   .card-lg-xl {
@@ -661,11 +795,6 @@
     margin-bottom: 12px;
   }
 
-  .card-three .front {
-    background: #fff url(../images/cards/card-three-bg-768.jpg) center no-repeat;
-    background-size: cover;
-  }
-
   .card-three__title {
     margin-bottom: 83px;
   }
@@ -676,11 +805,6 @@
 
   .card-four {
     order: 3;
-  }
-
-  .card-four .front {
-    background: #fff url(../images/cards/card-four-bg-768.jpg) center no-repeat;
-    background-size: cover;
   }
 
   .card-four__title {
@@ -708,11 +832,9 @@
     min-height: 403px;
   }
 
-  .card-five .front {
+  .card-five__container {
     padding-top: 52px;
     padding-left: 39px;
-    background: url(../images/cards/card-five-bg-768.jpg) center no-repeat;
-    background-size: cover;
   }
 
   .card-five__description {
@@ -764,11 +886,6 @@
     order: 4;
   }
 
-  .card-seven .front {
-    background: url(../images/cards/card-seven-bg-768.jpg) center no-repeat;
-    background-size: cover;
-  }
-
   .card-seven .card-md_content_top {
     padding-top: 145px;
   }
@@ -782,10 +899,8 @@
     min-height: 403px;
   }
 
-  .card-seventeen .front {
+  .card-seventeen__container {
     padding: 33px 20px 0;
-    background: url(../images/offer/offer-bg-768.svg) center no-repeat;
-    background-size: cover;
   }
 }
 
@@ -871,7 +986,7 @@
     height: 220px;
   }
 
-  .card-sm .front {
+  .card-one__container {
     padding-bottom: 20px;
   }
 
@@ -901,7 +1016,7 @@
     min-height: 250px;
   }
 
-  .card-five .front {
+  .card-five__container {
     padding-top: 30px;
     padding-left: 20px;
   }
@@ -992,7 +1107,7 @@
     height: 121px;
   }
 
-  .card-sm .front {
+  .card-one__container {
     padding-top: 22px;
     padding-bottom: 22px;
   }
@@ -1050,11 +1165,6 @@
     margin-right: 0;
   }
 
-  .card-three .front {
-    background: url(../images/cards/card-three-bg-320.jpg) center no-repeat;
-    background-size: cover;
-  }
-
   .card-three__title {
     max-width: 75px;
     font-size: 20px;
@@ -1064,11 +1174,6 @@
   .card-four {
     order: 2;
     margin-right: 12px;
-  }
-
-  .card-four .front {
-    background: url(../images/cards/card-four-bg-320.jpg) center no-repeat;
-    background-size: cover;
   }
 
   .card-four__title {
@@ -1099,11 +1204,9 @@
     min-height: 148px;
   }
 
-  .card-five .front {
+  .card-five__container {
     padding-top: 10px;
     padding-left: 10px;
-    background: url(../images/cards/card-five-bg-320.jpg) center no-repeat;
-    background-size: cover;
   }
 
   .card-five__description {
@@ -1129,7 +1232,7 @@
     padding-bottom: 10px;
   }
 
-  .card-six .front {
+  .card-six__container {
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -1148,7 +1251,7 @@
     padding-top: 11px;
   }
 
-  .card-seven .front {
+  .card-seven__container {
     align-items: flex-start;
     padding-left: 10px;
     padding-right: 10px;
@@ -1181,10 +1284,8 @@
     min-height: 153px;
   }
 
-  .card-seventeen .front {
+  .card-seventeen__container {
     padding-top: 9px;
-    background: url(../images/offer/offer-bg-320.svg) center no-repeat;
-    background-size: cover;
   }
 
   .card-seventeen__title {
