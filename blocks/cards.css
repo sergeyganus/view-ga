@@ -29,18 +29,21 @@
   flex-wrap: wrap;
   margin: 0 auto;
   padding-top: 35px;
-  max-width: 1359px;
+  max-width: 1800px;
 }
 
-.card-sm {
-  box-sizing: border-box;
-  position: relative;
-  margin-bottom: 17px;
-  width: calc(32% - 8px);
-  height: 500px;
+.card-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  line-height: 0;
+  border-radius: 4px;
 }
 
-.card-sm__container {
+.card-container {
   box-sizing: border-box;
   position: absolute;
   inset: 0;
@@ -52,36 +55,52 @@
   z-index: 1;
 }
 
-.card-sm__description {
-  margin-top: 0;
-  margin-bottom: 23px;
+.card-sm {
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 17px;
+  width: calc(33.333% - 13.33px);
+  height: 500px;
+}
+
+.card-sm_content_bottom {
+  justify-content: flex-end;
+  padding-bottom: 37px;
+}
+
+.card-sm_content_top {
+  padding-top: 72px;
+}
+
+.card-sm__link {
+  position: absolute;
+  display: block;
+  top: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  background: url(../images/cards/icons/link-icon.svg) center no-repeat;
+  background-size: cover;
+}
+
+.card-sm__label {
+  box-sizing: border-box;
+  position: absolute;
+  top: 23px;
+  left: 21px;
+  padding: 1px 8px;
   font-family: 'Sharp Grotesk DB Cyr Book 20';
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  color: #153c2f;
+  background-color: #5dc397;
+  border-radius: 19px;
 }
 
 .card-sm__title {
   margin-top: 0;
-  margin-bottom: 45px;
-  max-width: 333px;
-  font-family: 'Sharp Grotesk DB Cyr Medium 22';
-  font-weight: 500;
-  font-size: 42px;
-  line-height: 48px;
   text-align: center;
-  color: #5dc397;
-}
-
-.card-sm__button {
-  max-width: 334px;
-  width: 100%;
-  height: 54px;
-  background: url(../images/cards/temp-button.jpg) no-repeat;
-  border: none;
-  border-radius: 34px;
 }
 
 .card-sm__tags-list {
@@ -104,9 +123,78 @@
   border-radius: 19px;
 }
 
+.card-sm__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.card-smd {
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 17px;
+  width: calc(42% - 10px);
+  height: 543px;
+}
+
+.card-smd__description {
+  margin-top: 0;
+  margin-bottom: 33px;
+  font-family: 'Sharp Grotesk DB Cyr Book 20';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.card-smd__title {
+  margin-top: 0;
+  margin-bottom: 37px;
+  max-width: 355px;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 62px;
+  text-align: center;
+  color: #5dc397;
+}
+
+.card-smd__button {
+  max-width: 334px;
+  width: 100%;
+  height: 54px;
+  background: url(../images/cards/temp-button.jpg) no-repeat;
+  border: none;
+  border-radius: 34px;
+}
+
+.card-smd__tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 4px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.card-smd__tags-item {
+  padding: 1px 8px;
+  font-family: 'Sharp Grotesk DB Cyr Book 20';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 19px;
+}
+
 .card-one {
   order: 1;
-  margin-right: 16px;
+  margin-right: 20px;
 }
 
 .card-one .front {
@@ -115,11 +203,11 @@
 }
 
 .card-one__container {
-  padding: 115px 30px 0;
+  padding: 132px 30px 0;
 }
 
 .card-one .back {
-  padding: 115px 30px 0;
+  padding: 132px 30px 0;
   background-color: grey;
   border-radius: 4px;
 }
@@ -128,8 +216,8 @@
   box-sizing: border-box;
   position: relative;
   margin-bottom: 17px;
-  width: calc(68% - 8px);
-  height: 500px;
+  width: calc(58% - 10px);
+  height: 543px;
 }
 
 .card-lg__tags-list {
@@ -158,39 +246,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(50% - 11px);
-  height: 700px;
+  width: calc(50% - 10px);
+  height: 890px;
 }
 
 .card-md_content_bottom {
   justify-content: flex-end;
-  padding-bottom: 49px;
+  padding-bottom: 72px;
 }
 
 .card-md_content_top {
-  padding-top: 110px;
-}
-
-.card-md__image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  line-height: 0;
-  border-radius: 4px;
-}
-
-.card-md__container {
-  box-sizing: border-box;
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+  padding-top: 121px;
 }
 
 .card-md__link {
@@ -204,7 +270,7 @@
   background-size: cover;
 }
 
-.card-md__label {
+.card-sm__label {
   box-sizing: border-box;
   position: absolute;
   top: 23px;
@@ -221,7 +287,6 @@
 
 .card-md__title {
   margin-top: 0;
-  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -266,7 +331,7 @@
 
 .card-three {
   order: 3;
-  margin-right: 22px;
+  margin-right: 20px;
   margin-bottom: 17px;
 }
 
@@ -277,11 +342,12 @@
 }
 
 .card-three__title {
-  max-width: 223px;
-  font-family: 'Sharp Grotesk DB Cyr Book 20';
-  font-weight: 400;
-  font-size: 67px;
-  line-height: 60px;
+  margin-bottom: 42px;
+  max-width: 340px;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 88px;
+  line-height: 84px;
   color: #eecf74;
 }
 
@@ -304,11 +370,12 @@
 }
 
 .card-four__title {
-  max-width: 318px;
+  margin-bottom: 40px;
+  max-width: 380px;
   font-family: 'Sharp Grotesk DB Cyr Medium 22';
   font-weight: 500;
-  font-size: 75px;
-  line-height: 64px;
+  font-size: 88px;
+  line-height: 87px;
   text-transform: uppercase;
   color: #1b4638;
 }
@@ -326,29 +393,7 @@
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  min-height: 500px;
-}
-
-.card-xl__image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  line-height: 0;
-  border-radius: 4px;
-}
-
-.card-xl__container {
-  box-sizing: border-box;
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+  min-height: 543px;
 }
 
 .card-xl__link {
@@ -364,7 +409,7 @@
 
 .card-xl__description {
   margin-top: 0;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   font-family: 'Sharp Grotesk DB Cyr Book 20';
   font-weight: 400;
   font-size: 16px;
@@ -416,8 +461,8 @@
 
 .card-five__container {
   align-items: flex-start;
-  padding-top: 141px;
-  padding-left: 65px;
+  padding-top: 131px;
+  padding-left: 240px;
 }
 
 .card-five .back {
@@ -433,7 +478,7 @@
 }
 
 .card-five__title {
-  margin-bottom: 94px;
+  margin-bottom: 40px;
   max-width: 459px;
   font-size: 67px;
   line-height: 60px;
@@ -442,6 +487,7 @@
 }
 
 .card-five__tags-list {
+  padding-left: 50px;
   max-width: 360px;
 }
 
@@ -452,7 +498,7 @@
 
 .card-six {
   order: 6;
-  margin-right: 22px;
+  margin-right: 20px;
   margin-bottom: 17px;
   height: 500px;
 }
@@ -473,7 +519,7 @@
   border-radius: 4px;
 }
 
-.card__six .card-md_content_bottom {
+.card__six .card-sm_content_bottom {
   padding-bottom: 37px;
 }
 
@@ -495,6 +541,7 @@
 
 .card-seven {
   order: 7;
+  margin-right: 20px;
   height: 500px;
 }
 
@@ -503,7 +550,7 @@
   border-radius: 4px;
 }
 
-.card-seven .card-md_content_top {
+.card-seven .card-sm_content_top {
   padding-top: 72px;
 }
 
@@ -529,19 +576,19 @@
   display: none;
 }
 
-.card-eight {
-  order: 8;
+.card-nine {
+  order: 9;
   margin-right: 16px;
 }
 
-.card-eight .front {
+.card-nine .front {
   padding-top: 77px;
-  background: url(../images/cards/card-eight-bg.jpg) center no-repeat;
+  background: url(../images/cards/card-nine-bg.jpg) center no-repeat;
   background-size: cover;
   border-radius: 4px;
 }
 
-.card-eight .back {
+.card-nine .back {
   background: #1b4638;
   border-radius: 4px;
 }
@@ -558,20 +605,20 @@
   color: #eecf74;
 }
 
-.card-eight__tags-list {
+.card-nine__tags-list {
   max-width: 424px;
 }
 
-.card-eight__tags-item {
+.card-nine__tags-item {
   color: #1b4638;
   background-color: #eecf74;
 }
 
-.card-nine {
-  order: 9;
+.card-eight {
+  order: 8;
 }
 
-.card-nine .front {
+.card-eight .front {
   background-color: #fff;
   border: 1px solid #e1eeee;
   border-radius: 4px;
@@ -580,6 +627,11 @@
 .card-seventeen {
   order: 17;
   margin-bottom: 21px;
+}
+
+.card-seventeen__image {
+  border: 1px solid #e1eeee;
+  border-radius: 4px;
 }
 
 .card-seventeen__container {
@@ -591,16 +643,96 @@
   border-radius: 4px;
 }
 
-@media screen and (max-width: 1499px) {
+@media screen and (max-width: 1920px) {
   .cards {
-    padding-left: 70px;
-    padding-right: 70px;
-    max-width: 1499px;
+    padding-left: 60px;
+    padding-right: 60px;
+    max-width: 1920px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .card-five__container {
+    padding-left: 120px;
+  }
+}
+
+@media screen and (max-width: 1499px) {
+  .card-smd {
+    height: 500px;
+  }
+
+  .card-smd__description {
+    margin-bottom: 23px;
+    font-size: 16px;
+  }
+
+  .card-smd__title {
+    margin-bottom: 45px;
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .card-one__container {
+    padding-top: 115px;
+  }
+
+  .card-one .back {
+    padding-top: 115px;
+  }
+
+  .card-lg {
+    height: 500px;
+  }
+
+  .card-md {
+    height: 700px;
+  }
+
+  .card-md_content_bottom {
+    padding-bottom: 52px;
+  }
+
+  .card-md_content_top {
+    padding-top: 110px;
+  }
+
+  .card-three__title {
+    margin-bottom: 25px;
+    max-width: 223px;
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
+    font-weight: 400;
+    font-size: 67px;
+    line-height: 60px;
+  }
+
+  .card-four__title {
+    margin-bottom: 25px;
+    max-width: 318px;
+    font-size: 75px;
+    line-height: 64px;
+  }
+
+  .card-xl {
+    min-height: 500px;
+  }
+
+  .card-xl__description {
+    margin-bottom: 23px;
+  }
+
+  .card-five__container {
+    padding-top: 141px;
+    padding-left: 65px;
+  }
+
+  .card-five__title {
+    margin-bottom: 94px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .card-sm {
+  .card-smd {
     height: 350px;
   }
 
@@ -608,16 +740,16 @@
     padding-top: 70px;
   }
 
-  .card-sm .back {
+  .card-smd .back {
     padding-top: 70px;
   }
 
-  .card-sm-xl {
+  .card-smd-xl {
     margin-right: 0;
     width: 100%;
   }
 
-  .card-sm__title {
+  .card-smd__title {
     max-width: 450px;
   }
 
@@ -708,6 +840,10 @@
     max-width: 400px;
   }
 
+  .card-five__tags-list {
+    padding-left: 20px;
+  }
+
   .card-six__title {
     max-width: 340px;
     font-size: 28px;
@@ -725,7 +861,7 @@
     padding: 26px 20px 0;
   }
 
-  .card-sm {
+  .card-smd {
     margin-bottom: 12px;
     height: 267px;
   }
@@ -735,25 +871,20 @@
     padding-bottom: 40px;
   }
 
-  .card-sm .back {
+  .card-smd .back {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 
-  .card-sm__description {
+  .card-smd__description {
     margin-bottom: 13px;
   }
 
-  .card-sm__title {
+  .card-smd__title {
     margin-bottom: 43px;
     max-width: 399px;
     font-size: 38px;
     line-height: 46px;
-  }
-
-  .card-sm-xl {
-    width: 100%;
-    margin-right: 0;
   }
 
   .card-lg {
@@ -855,7 +986,7 @@
     margin-right: 12px;
   }
 
-  .card-six .card-md_content_bottom {
+  .card-six .card-sm_content_bottom {
     padding-bottom: 24px;
   }
 
@@ -886,7 +1017,7 @@
     order: 4;
   }
 
-  .card-seven .card-md_content_top {
+  .card-seven .card-sm_content_top {
     padding-top: 145px;
   }
 
@@ -905,12 +1036,16 @@
 }
 
 @media screen and (max-width: 750px) {
-  .card-seven .card-md_content_top {
+  .card-seven .card-sm_content_top {
     padding-top: 70px;
   }
 }
 
 @media screen and (max-width: 668px) {
+  .card-sm__text {
+    display: none;
+  }
+
   .card-md__tags-list {
     display: none;
   }
@@ -982,7 +1117,7 @@
 }
 
 @media screen and (max-width: 460px) {
-  .card-sm {
+  .card-smd {
     height: 220px;
   }
 
@@ -990,15 +1125,15 @@
     padding-bottom: 20px;
   }
 
-  .card-sm .back {
+  .card-smd .back {
     padding-bottom: 20px;
   }
 
-  .card-sm__description {
+  .card-smd__description {
     display: none;
   }
 
-  .card-sm__title {
+  .card-smd__title {
     margin-bottom: 25px;
     font-size: 25px;
     line-height: 32px;
@@ -1075,7 +1210,7 @@
     line-height: 26px;
   }
 
-  .card-seven .card-md_content_top {
+  .card-seven .card-sm_content_top {
     padding-top: 50px;
   }
 
@@ -1103,7 +1238,7 @@
     padding: 20px 12px 0;
   }
 
-  .card-sm {
+  .card-smd {
     height: 121px;
   }
 
@@ -1112,22 +1247,22 @@
     padding-bottom: 22px;
   }
 
-  .card-sm .back {
+  .card-smd .back {
     padding-top: 22px;
     padding-bottom: 22px;
   }
 
-  .card-sm__description {
+  .card-smd__description {
     display: none;
   }
 
-  .card-sm__title {
+  .card-smd__title {
     margin-bottom: 16px;
     font-size: 18px;
     line-height: 21px;
   }
 
-  .card-sm__button {
+  .card-smd__button {
     max-width: 249px;
     height: 40px;
     background: url(../images/cards/temp-button-320.jpg) no-repeat;
@@ -1228,7 +1363,7 @@
     text-align: left;
   }
 
-  .card-six .card-md_content_bottom {
+  .card-six .card-sm_content_bottom {
     padding-bottom: 10px;
   }
 
@@ -1247,7 +1382,7 @@
     display: none;
   }
 
-  .card-seven .card-md_content_top {
+  .card-seven .card-sm_content_top {
     padding-top: 11px;
   }
 

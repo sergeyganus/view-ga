@@ -1,16 +1,17 @@
 .intro {
-  padding-top: 61px;
+  box-sizing: border-box;
+  padding-top: 62px;
   margin: 0 auto;
-  max-width: 1359px;
+  max-width: 1800px;
 }
 
 .intro__title {
   margin-top: 0;
-  margin-bottom: 13px;
-  max-width: 980px;
+  margin-bottom: 24px;
+  max-width: 1635px;
   font-family: 'Sharp Grotesk DB Cyr Medium 22';
   font-weight: 500;
-  font-size: 70px;
+  font-size: 80px;
   line-height: 80px;
   color: #1b4638;
 }
@@ -38,11 +39,19 @@
   color: #1b4638;
 }
 
-@media screen and (max-width: 1499px) {
+@media screen and (max-width: 1920px) {
   .intro {
-    padding-left: 70px;
-    padding-right: 70px;
-    max-width: 1499px;
+    padding-left: 60px;
+    padding-right: 60px;
+    max-width: 1920px;
+  }
+}
+
+@media screen and (max-width: 1499px) {
+  .intro__title {
+    margin-bottom: 13px;
+    max-width: 980px;
+    font-size: 70px;
   }
 
   .intro__text {

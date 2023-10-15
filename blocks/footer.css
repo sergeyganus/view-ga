@@ -1,14 +1,14 @@
 .footer {
   box-sizing: border-box;
-  margin-bottom: 47px;
   background-color: #f1f4f4;
 }
 
 .footer__container {
+  box-sizing: border-box;
   margin: 0 auto;
   padding-top: 52px;
   padding-bottom: 32px;
-  max-width: 1359px;
+  max-width: 1800px;
 }
 
 .footer__actions {
@@ -182,21 +182,18 @@
 }
 
 .footer__made-by {
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 432px;
-  width: 100%;
+  margin: 0 29px 0 0;
 }
 
 .footer__copyright {
   display: block;
 }
 
-@media screen and (max-width: 1499px) {
+@media screen and (max-width: 1920px) {
   .footer {
-    padding-left: 70px;
-    padding-right: 70px;
-    max-width: 1499px;
+    padding-left: 60px;
+    padding-right: 60px;
+    max-width: 1920px;
   }
 }
 
@@ -210,6 +207,7 @@
   }
 
   .footer__made-by {
+    margin-right: 0;
     max-width: 328px;
   }
 }
