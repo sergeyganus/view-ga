@@ -98,6 +98,11 @@
   border-radius: 19px;
 }
 
+.card-sm__prod-image {
+  display: block;
+  line-height: 0;
+}
+
 .card-sm__title {
   margin-top: 0;
   text-align: center;
@@ -270,7 +275,7 @@
   background-size: cover;
 }
 
-.card-sm__label {
+.card-md__label {
   box-sizing: border-box;
   position: absolute;
   top: 23px;
@@ -555,6 +560,7 @@
 }
 
 .card-seven__title {
+  margin-bottom: 24px;
   font-family: 'Sharp Grotesk DB Cyr Medium 22';
   font-weight: 500;
   font-size: 42px;
@@ -576,6 +582,58 @@
   display: none;
 }
 
+.card-eight {
+  order: 8;
+}
+
+.card-eight .front {
+  background-color: #fff;
+  border: 1px solid #e1eeee;
+  border-radius: 4px;
+}
+
+.card-eight .back {
+  background-color: #808080;
+  border-radius: 4px;
+}
+
+.card-eight .card-sm_content_top {
+  padding-top: 50px;
+}
+
+.card-eight__link {
+  background: url(../images/cards/icons/card-green-link-icon.svg) center no-repeat;
+  background-size: cover;
+}
+
+.card-eight__prod-image {
+  margin-bottom: 32px;
+  width: 77px;
+  height: 203px;
+  object-fit: contain;
+}
+
+.card-eight__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  max-width: 380px;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  text-align: center;
+  color: #1b4638;
+}
+
+.card-eight__tags-list {
+  max-width: 380px;
+}
+
+.card-eight__tags-item {
+  color: #fff;
+  background-color: #1b4638;
+}
+
 .card-nine {
   order: 9;
   margin-right: 16px;
@@ -593,18 +651,6 @@
   border-radius: 4px;
 }
 
-.card-eight__title {
-  margin-top: 0;
-  margin-bottom: 24px;
-  max-width: 510px;
-  font-family: 'Sharp Grotesk DB Cyr Medium 22';
-  font-weight: 500;
-  font-size: 42px;
-  line-height: 48px;
-  text-align: center;
-  color: #eecf74;
-}
-
 .card-nine__tags-list {
   max-width: 424px;
 }
@@ -614,14 +660,56 @@
   background-color: #eecf74;
 }
 
-.card-eight {
-  order: 8;
+.card-sixteen {
+  order: 16;
+  margin-right: 20px;
 }
 
-.card-eight .front {
+.card-sixteen .card-sm_content_bottom {
+  padding-bottom: 34px;
+}
+
+.card-sixteen .front {
   background-color: #fff;
   border: 1px solid #e1eeee;
   border-radius: 4px;
+}
+
+.card-sixteen .back {
+  background-color: #1b4638;
+  border-radius: 4px;
+}
+
+.card-sixteen__container {
+  align-items: flex-start;
+  padding-left: 28px;
+  padding-right: 20px;
+}
+
+.card-sixteen__link {
+  background: url(../images/cards/icons/card-green-link-icon.svg) center no-repeat;
+  background-size: cover;
+}
+
+.card-sixteen__title {
+  margin-bottom: 23px;
+  max-width: 302px;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  text-align: left;
+  color: #1b4638;
+}
+
+.card-sixteen__text {
+  max-width: 343px;
+  color: #1b4638;
+}
+
+.card-sixteen__another-text {
+  display: none;
+  color: #1b4638;
 }
 
 .card-seventeen {
@@ -657,7 +745,11 @@
   }
 }
 
-@media screen and (max-width: 1499px) {
+@media screen and (max-width: 1479px) {
+  .card-sm-md {
+    width: calc(50% - 10px);
+  }
+
   .card-smd {
     height: 500px;
   }
@@ -729,6 +821,18 @@
   .card-five__title {
     margin-bottom: 94px;
   }
+
+  .card-seven {
+    margin-right: 0;
+  }
+
+  .card-eight {
+    order: 9;
+  }
+
+  .card-sixteen {
+    order: 8;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -786,6 +890,16 @@
     padding-left: 21px;
     padding-right: 21px;
   }
+
+  .card-eight__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .card-sixteen__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -795,6 +909,11 @@
 }
 
 @media screen and (max-width: 960px) {
+  .card-sm__tags-item {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
   .card-md__tags-item {
     font-size: 12px;
     line-height: 22px;
@@ -854,6 +973,10 @@
     font-size: 14px;
     line-height: 22px;
   }
+
+  .card-eight__prod-image {
+    height: 180px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -899,6 +1022,11 @@
 
   .card-lg-xl {
     width: 100%;
+  }
+
+  .card-sm-md {
+    width: calc(50% - 6px);
+    height: 372px;
   }
 
   .card-md {
@@ -1025,6 +1153,26 @@
     margin-bottom: 63px;
   }
 
+  .card-eight .card-sm_content_top {
+    padding-top: 50px;
+  }
+
+  .card-eight__prod-image {
+    height: 169px;
+  }
+
+  .card-eight__tags-list {
+    display: none;
+  }
+
+  .card-sixteen {
+    margin-right: 12px;
+  }
+
+  .card-sixteen .card-sm_content_bottom {
+    padding-bottom: 26px;
+  }
+
   .card-seventeen {
     margin-bottom: 97px;
     min-height: 403px;
@@ -1042,7 +1190,7 @@
 }
 
 @media screen and (max-width: 668px) {
-  .card-sm__text {
+  .card-sm__tags-list {
     display: none;
   }
 
@@ -1072,11 +1220,37 @@
     font-size: 27px;
     line-height: 30px;
   }
+
+  .card-six__text {
+    display: none;
+  }
+
+  .card-eight__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .card-sixteen__title {
+    margin-bottom: 16px;
+    max-width: 170px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .card-sixteen__text {
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 560px) {
   .card-seventeen {
     min-height: 360px;
+  }
+
+  .card-eight__title {
+    margin-bottom: 0;
+    font-size: 28px;
+    line-height: 34px;
   }
 
   .card-seventeen__title {
@@ -1086,6 +1260,10 @@
 }
 
 @media screen and (max-width: 520px) {
+  .card-sm-md {
+    height: 250px;
+  }
+
   .card-md {
     height: 250px;
   }
@@ -1113,6 +1291,28 @@
   .card-seven__title {
     font-size: 32px;
     line-height: 36px;
+  }
+
+  .card-eight .card-sm_content_top {
+    padding-top: 40px;
+  }
+
+  .card-eight__prod-image {
+    height: 90px;
+  }
+
+  .card-eight__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .card-sixteen__text {
+    display: none;
+  }
+
+  .card-sixteen__another-text {
+    display: block;
+    line-height: 24px;
   }
 }
 
@@ -1165,11 +1365,30 @@
     font-size: 38px;
     line-height: 40px;
   }
+
+  .card-eight__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .card-sixteen__title {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
 
 @media screen and (max-width: 390px) {
+  .card-sm-md {
+    height: 200px;
+  }
+
   .card-md {
     height: 200px;
+  }
+
+  .card-sm__link {
+    display: none;
   }
 
   .card-md__link {
@@ -1217,6 +1436,30 @@
   .card-seven__title {
     font-size: 22px;
     line-height: 28px;
+  }
+
+  .card-eight .card-sm_content_top {
+    padding-top: 34px;
+  }
+
+  .card-eight__prod-image {
+    height: 68px;
+  }
+
+  .card-eight__title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .card-sixteen__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 19px;
+  }
+
+  .card-sixteen__another-text {
+    font-size: 12px;
+    line-height: 15px;
   }
 
   .card-seventeen {
@@ -1268,6 +1511,10 @@
     background: url(../images/cards/temp-button-320.jpg) no-repeat;
   }
 
+  .card-sm-md {
+    height: 148px;
+  }
+
   .card-md {
     height: 148px;
   }
@@ -1282,6 +1529,13 @@
 
   .card-md__link {
     display: none;
+  }
+
+  .card-sm__label {
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    line-height: 22px;
   }
 
   .card-md__label {
@@ -1412,6 +1666,27 @@
 
   .card-seven__text-block {
     display: block;
+  }
+
+  .card-eight .card-sm_content_top {
+    padding-top: 15px;
+  }
+
+  .card-eight__prod-image {
+    margin-bottom: 12px;
+  }
+
+  .card-sixteen .card-sm_content_bottom {
+    padding-bottom: 10px;
+  }
+
+  .card-sixteen__container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card-sixteen__title {
+    margin-bottom: 1px;
   }
 
   .card-seventeen {
