@@ -55,6 +55,91 @@
   z-index: 1;
 }
 
+.card-xs {
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 17px;
+  width: calc(25% - 15px);
+  height: 500px;
+}
+
+
+.card-xs_content_bottom {
+  justify-content: flex-end;
+  padding-bottom: 37px;
+}
+
+.card-xs_content_top {
+  padding-top: 72px;
+}
+
+.card-xs__link {
+  position: absolute;
+  display: block;
+  top: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  background: url(../images/cards/icons/link-icon.svg) center no-repeat;
+  background-size: cover;
+}
+
+.card-xs__label {
+  box-sizing: border-box;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  padding: 1px 8px;
+  font-family: 'Sharp Grotesk DB Cyr Book 20';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+  background-color: #5dc397;
+  border-radius: 19px;
+}
+
+.card-xs__review-stars {
+  display: block;
+  margin-bottom: 24px;
+  width: 88px;
+  height: 16px;
+}
+
+.card-xs__review-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card-xs__prod-image {
+  display: block;
+  line-height: 0;
+}
+
+.card-xs__title {
+  margin-top: 0;
+  text-align: center;
+}
+
+.card-xs__review-name {
+  margin-top: 0;
+}
+
+.card-xs__decorative-image {
+  display: block;
+  line-height: 0;
+  border-radius: 4px;
+}
+
+.card-xs__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
 .card-sm {
   box-sizing: border-box;
   position: relative;
@@ -809,12 +894,139 @@
   color: #e7f2f1;
 }
 
-.card-sixteen {
-  order: 16;
+.card-thirteen {
+  order: 13;
   margin-right: 20px;
 }
 
-.card-sixteen .card-sm_content_bottom {
+.card-thirteen .card-xs_content_top {
+  padding-top: 80px;
+}
+
+.card-thirteen .front {
+  background-color: #e1eeee;
+  border-radius: 4px;
+}
+
+.card-thirteen .back {
+  background: #1b4638;
+  border-radius: 4px;
+}
+
+.card-thirteen__container {
+  align-items: flex-start;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.card-thirteen__link {
+  background: url(../images/cards/icons/card-thirteen-link-icon.svg) center no-repeat;
+  background-size: cover;
+}
+
+.card-fifteen__label {
+  top: 23px;
+  left: 20px;
+}
+
+.card-thirteen__review-name {
+  margin-bottom: 7px;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #153c2f;
+}
+
+.card-thirteen__review-text {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #153c2f;
+}
+
+.card-fourteen {
+  order: 14;
+  margin-right: 20px;
+}
+
+.card-fourteen .card-xs_content_top {
+  padding-top: 154px;
+}
+
+.card-fourteen .front {
+  background: #1b4638;
+  border-radius: 4px;
+}
+
+.card-fourteen .back {
+  background: #808080;
+  border-radius: 4px;
+}
+
+.card-fourteen__title {
+  margin-bottom: 0;
+  max-width: 355px;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+}
+
+.card-fifteen {
+  order: 15;
+  margin-right: 20px;
+}
+
+.card-fifteen .card-xs_content_bottom {
+  padding-bottom: 20px;
+}
+
+.card-fifteen .front {
+  background-color: #fff;
+  border: 1px solid #e1eeee;
+  border-radius: 4px;
+}
+
+.card-fifteen .back {
+  background: #1b4638;
+  border-radius: 4px;
+}
+
+.card-fifteen__container {
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card-fifteen__link {
+  background: url(../images/cards/icons/card-fifteen-link-icon.svg) center no-repeat;
+  background-size: cover;
+}
+
+.card-fifteen__title {
+  margin-bottom: 20px;
+  max-width: 270px;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: left;
+  color: #153c2f;
+}
+
+.card-fifteen__decorative-image {
+  width: 100%;
+}
+
+.card-sixteen {
+  order: 16;
+}
+
+.card-sixteen .card-xs_content_bottom {
   padding-bottom: 34px;
 }
 
@@ -888,6 +1100,13 @@
   }
 }
 
+@media screen and (max-width: 1800px) {
+  .card-thirteen__review-text {
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
+
 @media screen and (max-width: 1700px) {
   .card-five__container {
     padding-left: 120px;
@@ -895,6 +1114,10 @@
 }
 
 @media screen and (max-width: 1479px) {
+  .card-xs-sm {
+    width: calc(33.33% - 13.33px);
+  }
+
   .card-sm-md {
     width: calc(50% - 10px);
   }
@@ -1032,8 +1255,28 @@
     font-size: 16px;
   }
 
+  .card-thirteen {
+    order: 14;
+  }
+
+  .card-thirteen__review-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .card-fourteen {
+    order: 15;
+  }
+
+  .card-fifteen {
+    order: 16;
+    margin-right: 0;
+  }
+
   .card-sixteen {
     order: 10;
+    margin-right: 20px;
+    width: calc(33% - 10px);
   }
 }
 
@@ -1042,9 +1285,18 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .card-thirteen__review-text {
+    font-size: 15px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
+  .card-xs-md {
+    width: calc(50% - 10px);
+  }
+
   .card-sm-md {
     width: calc(50% - 10px);
   }
@@ -1129,6 +1381,24 @@
     padding-top: 110px;
   }
 
+  .card-twelve {
+    margin-right: 20px;
+  }
+
+  .card-thirteen {
+    order: 15;
+  }
+
+  .card-thirteen__review-text {
+    font-size: 16px;
+    line-height: 28px
+  }
+
+  .card-fourteen {
+    order: 14;
+    margin-right: 0;
+  }
+
   .card-sixteen {
     order: 10;
   }
@@ -1184,6 +1454,11 @@
     margin-bottom: 15px;
     font-size: 36px;
   }
+
+  .card-thirteen__review-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 880px) {
@@ -1218,6 +1493,11 @@
 
   .card-eight__prod-image {
     height: 180px;
+  }
+
+  .card-thirteen__review-text {
+    font-size: 15px;
+    line-height: 23px;
   }
 }
 
@@ -1258,6 +1538,11 @@
 
   .card-lg-xl {
     width: 100%;
+  }
+
+  .card-xs-md {
+    width: calc(50% - 6px);
+    height: 372px;
   }
 
   .card-sm-md {
@@ -1409,6 +1694,10 @@
     padding-top: 60px;
   }
 
+  .card-twelve {
+    margin-right: 12px;
+  }
+
   .card-twelve .card-md_content_bottom {
     padding-bottom: 20px;
   }
@@ -1432,11 +1721,29 @@
     line-height: 20px;
   }
 
+  .card-thirteen {
+    margin-right: 12px;
+    height: 432px;
+  }
+
+  .card-thirteen__review-text {
+    font-size: 14px;
+    line-height: 22.5px;
+  }
+
+  .card-fourteen .card-xs_content_top {
+    padding-top: 120px;
+  }
+
+  .card-fifteen {
+    height: 432px;
+  }
+
   .card-sixteen {
     margin-right: 12px;
   }
 
-  .card-sixteen .card-sm_content_bottom {
+  .card-sixteen .card-xs_content_bottom {
     padding-bottom: 26px;
   }
 
@@ -1470,9 +1777,18 @@
   .card-seven .card-sm_content_top {
     padding-top: 70px;
   }
+
+  .card-thirteen__review-text {
+    font-size: 12px;
+    line-height: 21px;
+  }
 }
 
 @media screen and (max-width: 668px) {
+  .card-xs__review-stars {
+    margin-bottom: 14px;
+  }
+
   .card-sm__tags-list {
     display: none;
   }
@@ -1551,6 +1867,26 @@
     line-height: 18px;
   }
 
+  .card-thirteen__review-name {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .card-thirteen__review-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .card-fourteen__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .card-fifteen__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
   .card-sixteen__title {
     margin-bottom: 16px;
     max-width: 170px;
@@ -1564,6 +1900,11 @@
 }
 
 @media screen and (max-width: 560px) {
+  .card-xs__label {
+    top: 20px;
+    left: 20px;
+  }
+
   .card-seventeen {
     height: 360px;
   }
@@ -1583,6 +1924,15 @@
     line-height: 16px;
   }
 
+  .card-thirteen .card-xs_content_top {
+    padding-top: 60px;
+  }
+
+  .card-thirteen__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .card-seventeen__title {
     max-width: 360px;
     font-size: 28px;
@@ -1590,6 +1940,19 @@
 }
 
 @media screen and (max-width: 520px) {
+  .card-xs_sm-hidden {
+    display: none;
+  }
+
+  .card-xs-md {
+    height: 250px;
+  }
+
+  .card-xs-lg {
+    width: 100%;
+    height: 394px;
+  }
+
   .card-sm-md {
     height: 250px;
   }
@@ -1664,6 +2027,24 @@
 
   .card-twelve__another-text {
     display: block;
+  }
+
+  .card-thirteen {
+    margin-right: 0;
+  }
+
+  .card-thirteen__review-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .card-fourteen .card-xs_content_top {
+    padding-top: 70px;
+  }
+
+  .card-fourteen__title {
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .card-sixteen__text {
@@ -1761,6 +2142,11 @@
     line-height: 18px;
   }
 
+  .card-fourteen__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
   .card-sixteen__title {
     margin-bottom: 10px;
     font-size: 22px;
@@ -1789,12 +2175,24 @@
     order: 5;
   }
 
+  .card-xs-md {
+    height: 200px;
+  }
+
+  .card-xs-lg {
+    height: 394px;
+  }
+
   .card-sm-md {
     height: 200px;
   }
 
   .card-md {
     height: 200px;
+  }
+
+  .card-xs__link {
+    display: none;
   }
 
   .card-sm__link {
@@ -1911,9 +2309,35 @@
     padding-right: 8px;
   }
 
+  .card-thirteen__link {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url(../images/cards/icons/card-thirteen-link-icon-320.svg) center no-repeat;
+    background-size: cover;
+  }
+
+  .card-sixteen .card-xs_content_bottom {
+    padding-bottom: 22px;
+  }
+
   .card-twelve__title {
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .card-thirteen__review-text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .card-fourteen .card-xs_content_top {
+    padding-top: 55px;
+  }
+
+  .card-fourteen__title {
+    font-size: 16px;
+    line-height: 22px;
   }
 
   .card-sixteen__title {
@@ -1946,6 +2370,17 @@
     padding: 20px 12px 0;
   }
 
+  .card-xs__label {
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .card-xs__review-stars {
+    margin-bottom: 14px;
+  }
+
   .card-smd {
     height: 121px;
   }
@@ -1974,6 +2409,14 @@
     max-width: 249px;
     height: 40px;
     background: url(../images/cards/temp-button-320.jpg) no-repeat;
+  }
+
+  .card-xs-md {
+    height: 148px;
+  }
+
+  .card-xs-lg {
+    height: 394px;
   }
 
   .card-sm-md {
@@ -2159,7 +2602,52 @@
     padding-bottom: 8px;
   }
 
-  .card-sixteen .card-sm_content_bottom {
+  .card-thirteen {
+    margin-right: 0;
+  }
+
+  .card-thirteen .card-xs_content_top {
+    padding-top: 46px;
+  }
+
+  .card-thirteen__container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card-thirteen__link {
+    top: 8px;
+    right: 8px;
+  }
+
+  .card-thirteen__review-name {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .card-thirteen__review-text {
+    max-width: 254px;
+    font-size: 12px;
+    line-height: 21.5px;
+  }
+
+  .card-fourteen .card-xs_content_top {
+    padding-top: 60px;
+  }
+
+  .card-fourteen__container {
+    align-items: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card-fourteen__title {
+    font-size: 15px;
+    line-height: 19.5px;
+    text-align: left;
+  }
+
+  .card-sixteen .card-xs_content_bottom {
     padding-bottom: 10px;
   }
 
