@@ -1,9 +1,8 @@
-/* Заменить на Medium */
 @font-face {
   font-family: 'Sharp Grotesk DB Cyr Medium 22';
   src: url(./SharpGroteskDBCyrMedium22/sharp-grotesk-db-cyr-medium-22-regular.woff2) format('woff2'),
     url(./SharpGroteskDBCyrMedium22/sharp-grotesk-db-cyr-medium-22-regular.woff) format('woff');
-  font-weight: 500;
+  font-weight: 400;
 }
 
 @font-face {
