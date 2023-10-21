@@ -14,11 +14,15 @@
 .footer__actions {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .footer__socials {
   max-width: 488px;
+}
+
+.footer__connect-socials {
+  margin-bottom: 59px;
 }
 
 .footer__title {
@@ -31,16 +35,26 @@
   color: #1b4638;
 }
 
+.footer__title_type_hotel-presentation {
+  margin-bottom: 9px;
+}
+
 .footer__text {
   margin-top: 0;
   margin-bottom: 24px;
-  max-width: 432px;
+  max-width: 410px;
   font-family: 'Inter';
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
   letter-spacing: -0.176px;
   color: #1e1e1e;
+}
+
+.footer__text_type_subscribe {
+  max-width: 432px;
+  margin-bottom: 30px;
+  line-height: 130%;
 }
 
 .footer__links-list {
@@ -92,8 +106,57 @@
   background-size: contain;
 }
 
+.footer__menu-and-subscribe {
+  display: flex;
+}
+
+.footer__menu {
+  display: flex;
+  margin-right: 116px;
+}
+
+.footer__menu_hidden-lg {
+  display: none;
+}
+
+.footer__menu-column-one {
+  margin-top: 5px;
+  margin-right: 71px;
+}
+
+.footer__menu-column-two {
+  margin-top: 5px;
+}
+
+.footer__menu-links-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.footer__menu-link {
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration: none;
+  color: #366656;
+}
+
 .footer__subscribe {
   max-width: 432px;
+}
+
+.footer__subscribe_hidden-lg {
+  display: none;
+}
+
+.footer__hotel-presentation_hidden-lg {
+  display: none;
 }
 
 .footer__form {
@@ -121,7 +184,7 @@
   color: #50776a;
 }
 
-.footer__submit-button {
+.footer__button {
   box-sizing: border-box;
   margin-bottom: 14px;
   padding: 18px 28px;
@@ -138,7 +201,7 @@
   cursor: pointer;
 }
 
-.footer__submit-button::after {
+.footer__button::after {
   display: inline-block;
   margin-left: 10px;
   width: 16px;
@@ -146,6 +209,12 @@
   content: "";
   background: url(../images/footer/icons/arrow-right.svg) center no-repeat;
   background-size: cover;
+}
+
+.footer__button_type_hotel-presentation {
+  margin-bottom: 0;
+  max-width: 312px;
+  width: 100%;
 }
 
 .footer__policy {
@@ -166,23 +235,23 @@
 .footer__info {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 19px;
   font-family: 'Sharp Grotesk DB Cyr Book 20';
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
-  color: #8DA9A8;
+  color: #8da9a8;
   border-top: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .footer__trademark {
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 405px;
+  max-width: 400px;
 }
 
 .footer__made-by {
-  margin: 0 29px 0 0;
+  margin: 0 2px 0 0;
 }
 
 .footer__copyright {
@@ -197,18 +266,54 @@
   }
 }
 
-@media screen and (max-width: 1060px) {
-  .footer__socials {
-    max-width: 328px;
+@media screen and (max-width: 1580px) {
+  .footer__subscribe_hidden-md {
+    display: none;
   }
 
-  .footer__subscribe {
-    max-width: 328px;
+  .footer__hotel-presentation_hidden-md {
+    display: none;
   }
 
-  .footer__made-by {
+  .footer__subscribe_hidden-lg {
+    display: block;
+  }
+
+  .footer__hotel-presentation_hidden-lg {
+    display: block;
+  }
+
+  .footer__menu-and-subscribe {
+    max-width: 396px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footer__menu {
     margin-right: 0;
-    max-width: 328px;
+    margin-bottom: 55px;
+  }
+
+  .footer__menu-column-one {
+    margin-top: 0;
+  }
+
+  .footer__menu-column-two {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .footer__menu {
+    flex-direction: column;
+  }
+
+  .footer__menu-column-two {
+    margin-top: 10px;
+  }
+
+  .footer__menu-and-subscribe {
+    max-width: 250px;
   }
 }
 
@@ -218,18 +323,27 @@
     padding-right: 30px;
     max-width: 880px;
   }
+
+  .footer__socials {
+    max-width: 328px;
+  }
+
+  .footer__title {
+    font-size: 15px;
+  }
+
+  .footer__text {
+    font-size: 14px;
+  }
+
+  .footer__text_type_subscribe {
+    line-height: 150%;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .footer__actions {
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-bottom: 55px;
-  }
-
-  .footer__socials {
-    margin-bottom: 36px;
-    max-width: 699px;
+    padding-bottom: 32px;
   }
 
   .footer__made-by {
@@ -246,46 +360,92 @@
   }
 
   .footer__container {
-    padding-top: 45px;
-    padding-bottom: 41px;
+    padding-top: 40px;
+    padding-bottom: 18px;
+  }
+
+  .footer__connect-socials {
+    margin-bottom: 24px;
   }
 
   .footer__title_type_socials {
-    margin-bottom: 20px;
-    font-size: 24px;
+    margin-bottom: 12px;
+    max-width: 298px;
+    font-size: 20px;
     line-height: 22px;
+  }
+
+  .footer__title_type_subscribe {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .footer__title_type_hotel-presentation {
+    margin-bottom: 9px;
+    font-size: 14px;
+  }
+
+  .footer__text {
+    margin-bottom: 11px;
+    max-width: 333px;
+    font-size: 13px;
+    line-height: 143%;
+    letter-spacing: -0.143px;
+  }
+
+  .footer__text_type_subscribe {
+    max-width: 298px;
   }
 
   .footer__links-list {
     max-width: 300px;
   }
 
-  .footer__text {
-    display: none;
+  .footer__menu-and-subscribe {
+    max-width: 312px;
+    width: 100%;
+    flex-direction: column;
   }
 
-  .footer__link_type_youtube {
-    display: block;
+  .footer__menu {
+    flex-direction: column;
+    margin-left: 7px;
+    margin-right: 0;
+    margin-bottom: 61px;
   }
 
-  .footer__link_type_vc-ru {
-    display: block;
+  .footer__menu-column-one {
+    margin-top: -2px;
   }
 
-  .footer__link_type_ya-dzen {
-    display: block;
-  }
-
-  .footer__title_type_subscribe {
-    margin-bottom: 15px;
+  .footer__menu-column-two {
+    margin-top: 10px;
   }
 
   .footer__form {
-    max-width: 294px;
+    max-width: 298px;
+  }
+
+  .footer__info {
+    padding-top: 19px;
   }
 
   .footer__made-by {
     max-width: 208px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .footer__socials {
+    max-width: 290px;
+  }
+
+  .footer__title {
+    font-size: 15px;
+  }
+
+  .footer__menu-and-subscribe {
+    max-width: 250px;
   }
 }
 
@@ -301,6 +461,53 @@
   }
 }
 
+@media screen and (max-width: 630px) {
+  .footer__menu_hidden-sm {
+    display: none;
+  }
+
+  .footer__hotel-presentation_hidden-sm {
+    display: none;
+  }
+
+  .footer__menu-and-subscribe_hidden-sm {
+    display: none;
+  }
+
+  .footer__hotel-presentation_hidden-md {
+    display: block;
+  }
+
+  .footer__menu_hidden-lg {
+    display: block;
+  }
+
+  .footer__socials {
+    max-width: 432px;
+  }
+
+  .footer__title {
+    max-width: 432px;
+    font-size: 18px;
+  }
+
+  .footer__connect-socials {
+    margin-bottom: 40px;
+  }
+
+  .footer__menu {
+    margin-bottom: 40px;
+  }
+
+  .footer__subscribe {
+    margin-bottom: 40px;
+  }
+
+  .footer__button_type_hotel-presentation {
+    max-width: 298px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .footer {
     padding-left: 12px;
@@ -309,18 +516,27 @@
   }
 
   .footer__container {
-    padding-top: 28px;
-    padding-bottom: 8px;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 
   .footer__actions {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
+  }
+
+  .footer__connect-socials {
+    margin-bottom: 36px;
   }
 
   .footer__title_type_socials {
-    max-width: 240px;
+    margin-bottom: 10px;
+    max-width: 244px;
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .footer__subscribe {
+    margin-bottom: 36px;
   }
 
   .footer__title_type_subscribe {
@@ -328,13 +544,40 @@
     line-height: 22px;
   }
 
+  .footer__title_type_hotel-presentation {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .footer__text {
+    margin-bottom: 10px;
+  }
+
+  .footer__text_type_socials {
+    margin-bottom: 11px;
+  }
+
+  .footer__menu {
+    margin-left: 0;
+    margin-bottom: 36px;
+  }
+
+  .footer__info {
+    margin-left: -2px;
+    padding-top: 15px;
+  }
+
   .footer__trademark {
-    max-width: 202px;
+    max-width: 270px;
   }
 
   .footer__company {
     display: block;
     margin-top: 8px;
     max-width: 201px;
+  }
+
+  .footer__made-by {
+    margin-left: 1px;
   }
 }
