@@ -410,6 +410,16 @@
   color: #fff;
 }
 
+.card-md__back-subtitle {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: #fff;
+}
+
 .card-md__text {
   margin-top: 0;
   margin-bottom: 0;
@@ -422,7 +432,7 @@
 .card-md__back-text {
   margin-top: 0;
   margin-bottom: 12px;
-  max-width: 769px;
+  max-width: 729px;
   font-family: 'Sharp Grotesk DB Cyr Book 20';
   font-weight: 400;
   font-size: 20px;
@@ -432,6 +442,10 @@
 
 .card-md__back-text_last {
   margin-bottom: 40px;
+}
+
+.card-md__back-text_no-margin-bottom {
+  margin-bottom: 0;
 }
 
 .card-md__tags-list {
@@ -917,8 +931,17 @@
 }
 
 .card-nine .back {
-  background: #1b4638;
   border-radius: 4px;
+}
+
+.card-nine .back .card-md_content_bottom {
+  padding-bottom: 48px;
+}
+
+.card-nine__back-container {
+  align-items: flex-start;
+  padding-left: 48px;
+  padding-right: 30px;
 }
 
 .card-nine__title {
@@ -930,6 +953,24 @@
   line-height: 48px;
   text-align: center;
   color: #eecf74;
+}
+
+.card-nine__back-title {
+  max-width: 520px;
+}
+
+.card-nine__back-subtitle {
+  letter-spacing: -0.456px;
+}
+
+.card-nine__back-text {
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.38px;
+}
+
+.card-nine .card-md__back-text_last {
+  margin-bottom: 44px;
 }
 
 .card-nine__tags-list {
@@ -952,8 +993,17 @@
 }
 
 .card-ten .back {
-  background: #808080;
   border-radius: 4px;
+}
+
+.card-ten .back .card-md_content_bottom {
+  padding-bottom: 48px;
+}
+
+.card-ten__back-container {
+  align-items: flex-start;
+  padding-left: 48px;
+  padding-right: 30px;
 }
 
 .card-ten__title {
@@ -965,6 +1015,20 @@
   line-height: 48px;
   text-align: center;
   color: #fff;
+}
+
+.card-ten__back-title {
+  max-width: 411px;
+}
+
+.card-ten__back-text {
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.38px;
+}
+
+.card-ten .card-md__back-text_last {
+  margin-bottom: 28px;
 }
 
 .card-ten__tags-list {
@@ -988,8 +1052,17 @@
 }
 
 .card-eleven .back {
-  background: #1b4638;
   border-radius: 4px;
+}
+
+.card-eleven .back .card-md_content_bottom {
+  padding-bottom: 48px;
+}
+
+.card-eleven__back-container {
+  align-items: flex-start;
+  padding-left: 48px;
+  padding-right: 30px;
 }
 
 .card-eleven__title {
@@ -1001,6 +1074,16 @@
   line-height: 48px;
   text-align: center;
   color: #eecf74;
+}
+
+.card-eleven__back-title {
+  max-width: 420px;
+}
+
+.card-eleven__back-text {
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.38px;
 }
 
 .card-eleven__tags-list {
@@ -1028,8 +1111,18 @@
 }
 
 .card-twelve .back {
-  background: #808080;
+  background: #1b4638;
   border-radius: 4px;
+}
+
+.card-twelve .back .card-md_content_bottom {
+  padding-bottom: 48px;
+}
+
+.card-twelve__back-container {
+  align-items: flex-start;
+  padding-left: 48px;
+  padding-right: 30px;
 }
 
 .card-twelve__title {
@@ -1039,6 +1132,20 @@
   font-size: 42px;
   line-height: 48px;
   color: #5dc397;
+}
+
+.card-twelve__back-title {
+  color: #5dc397;
+}
+
+.card-twelve__back-text {
+  max-width: 802px;
+  font-size: 20px;
+  line-height: 156%;
+}
+
+.card-twelve .card-md__back-text_last {
+  margin-bottom: 23px;
 }
 
 .card-twelve__container {
@@ -1286,6 +1393,13 @@
   }
 }
 
+@media screen and (max-width: 1850px) {
+  .card-twelve__back-text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
 @media screen and (max-width: 1800px) {
   .card-thirteen__review-text {
     font-size: 14px;
@@ -1322,6 +1436,17 @@
     font-size: 18px;
     line-height: 26px;
   }
+
+  .card-twelve__back-text {
+    font-size: 17px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 1510px) {
+  .card-ten__back-subtitle {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 1479px) {
@@ -1339,6 +1464,10 @@
 
   .card-md-lg {
     width: calc(67% - 10px);
+  }
+
+  .card-md__back-text_hidden-lg {
+    display: none;
   }
 
   .card-smd {
@@ -1441,6 +1570,11 @@
     height: 500px;
   }
 
+  .card-nine__back-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   .card-ten {
     order: 11;
     height: 500px;
@@ -1448,6 +1582,10 @@
 
   .card-ten .card-md_content_bottom {
     padding-bottom: 51px;
+  }
+
+  .card-ten__back-subtitle {
+    font-size: 24px;
   }
 
   .card-eleven {
@@ -1471,6 +1609,11 @@
   .card-twelve__container {
     padding-left: 21px;
     padding-right: 21px;
+  }
+
+  .card-twelve__back-text {
+    font-size: 17px;
+    line-height: 22px;
   }
 
   .card-twelve__advantages-list {
@@ -1639,8 +1782,20 @@
     margin-right: 0;
   }
 
+  .card-nine__back-text {
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
+    font-size: 20px;
+    line-height: 150%;
+  }
+
   .card-ten {
     order: 9;
+  }
+
+  .card-ten__back-text {
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
+    font-size: 20px;
+    line-height: 150%;
   }
 
   .card-eleven {
@@ -1651,8 +1806,23 @@
     padding-top: 110px;
   }
 
+  .card-eleven__back-text {
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
+    font-size: 20px;
+    line-height: 150%;
+  }
+
   .card-twelve {
     margin-right: 20px;
+  }
+
+  .card-twelve .back .card-md_content_bottom {
+    padding-bottom: 24px;
+  }
+
+  .card-twelve__back-container {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .card-thirteen {
@@ -1698,6 +1868,10 @@
     margin-bottom: 8px;
     font-size: 14px;
     line-height: 18px;
+  }
+
+  .card-md__back-text_no-margin-bottom {
+    margin-bottom: 0;
   }
 
   .card-md__back-text_last {
@@ -1756,6 +1930,50 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  .card-nine .card-md__back-text_last {
+    margin-bottom: 30px;
+  }
+
+  .card-nine__back-title {
+    margin-bottom: 20px;
+    max-width: 440px;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .card-nine__back-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .card-ten__back-title {
+    margin-bottom: 20px;
+    max-width: 320px;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .card-ten__back-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .card-eleven__back-title {
+    margin-bottom: 20px;
+    max-width: 320px;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .card-eleven__back-text {
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  .card-twelve .card-md__button {
+    max-width: 220px;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -1810,6 +2028,10 @@
     line-height: 22px;
   }
 
+  .card-ten__back-text {
+    max-width: 650px;
+  }
+
   .card-twelve__title {
     margin-bottom: 15px;
     font-size: 36px;
@@ -1859,6 +2081,10 @@
 
   .card-eight__prod-image {
     height: 180px;
+  }
+
+  .card-ten__back-subtitle {
+    font-size: 22px;
   }
 
   .card-thirteen__review-text {
@@ -1950,6 +2176,10 @@
   }
 
   .card-md__tags-item-sm_hidden {
+    display: none;
+  }
+
+  .card-md__back-text_hidden-md {
     display: none;
   }
 
@@ -2072,8 +2302,26 @@
     padding-top: 115px;
   }
 
+  .card-nine .back .card-md_content_bottom {
+    padding-bottom: 24px;
+  }
+
+  .card-nine__back-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .card-ten {
     height: 403px;
+  }
+
+  .card-ten .back .card-md_content_bottom {
+    padding-bottom: 24px;
+  }
+
+  .card-ten__back-container {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .card-eleven {
@@ -2082,6 +2330,15 @@
 
   .card-eleven .card-md_content_top {
     padding-top: 60px;
+  }
+
+  .card-eleven .back .card-md_content_bottom {
+    padding-bottom: 24px;
+  }
+
+  .card-eleven__back-container {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .card-twelve {
@@ -2101,6 +2358,10 @@
     margin-bottom: 8px;
     padding-left: 8px;
     font-size: 32px;
+  }
+
+  .card-twelve__back-text {
+    margin-bottom: 20px;
   }
 
   .card-twelve__advantages-list {
