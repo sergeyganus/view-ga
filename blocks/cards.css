@@ -63,7 +63,6 @@
   height: 500px;
 }
 
-
 .card-xs_content_bottom {
   justify-content: flex-end;
   padding-bottom: 37px;
@@ -111,6 +110,51 @@
   margin-bottom: 0;
 }
 
+.card-xs__answer-container {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.card-xs__answer-image {
+  display: block;
+  line-height: 0;
+}
+
+.card-xs__answer-description {
+  margin-left: 24px;
+  padding-top: 20px;
+}
+
+.card-xs__answer-name {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 27.5px;
+  color: #1b4638;
+}
+
+.card-xs__answer-about {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Sharp Grotesk DB Cyr Book 20';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #4c7a6b;
+}
+
+.card-xs__answer-text {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Sharp Grotesk DB Cyr Book 20';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #1b4638;
+}
+
 .card-xs__prod-image {
   display: block;
   line-height: 0;
@@ -138,6 +182,37 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
+}
+
+.card-xs__back-text {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: 'Sharp Grotesk DB Cyr Book 20';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.38px;
+  color: #fff;
+}
+
+.card-xs__back-text_last {
+  margin-bottom: 36px;
+}
+
+.card-xs__button {
+  padding: 11px 20px;
+  max-width: 371px;
+  min-height: 54px;
+  width: 100%;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #5dc397;
+  cursor: pointer;
 }
 
 .card-sm {
@@ -632,6 +707,12 @@
   color: #1b4638;
 }
 
+.card-xl__back-info {
+  max-width: 880px;
+  display: flex;
+  flex-direction: column;
+}
+
 .card-xl__back-title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -639,6 +720,18 @@
   font-weight: 500;
   font-size: 42px;
   line-height: 48px;
+  color: #1b4638;
+}
+
+.card-xl__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 1454px;
+  font-family: 'Sharp Grotesk DB Cyr Book 20';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
   color: #1b4638;
 }
 
@@ -675,6 +768,22 @@
   font-size: 14px;
   line-height: 22px;
   border-radius: 19px;
+}
+
+.card-xl__button {
+  padding: 11px 20px;
+  max-width: 374px;
+  min-height: 54px;
+  width: 100%;
+  font-family: 'Sharp Grotesk DB Cyr Medium 22';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #5dc397;
+  cursor: pointer;
 }
 
 .card-five {
@@ -1148,6 +1257,10 @@
   margin-bottom: 23px;
 }
 
+.card-twelve__button {
+  max-width: 288px;
+}
+
 .card-twelve__container {
   align-items: flex-start;
   padding-left: 40px;
@@ -1202,8 +1315,13 @@
 }
 
 .card-thirteen .back {
-  background: #1b4638;
+  background: #fff;
+  border: 2px solid #e1eeee;
   border-radius: 4px;
+}
+
+.card-thirteen .back .card-xs_content_top {
+  padding-top: 46px;
 }
 
 .card-thirteen__container {
@@ -1212,8 +1330,19 @@
   padding-right: 24px;
 }
 
+.card-thirteen__back-container {
+  align-items: flex-start;
+  padding-left: 36px;
+  padding-right: 30px;
+}
+
 .card-thirteen__link {
   background: url(../images/cards/icons/card-thirteen-link-icon.svg) center no-repeat;
+  background-size: cover;
+}
+
+.card-thirteen__back-link {
+  background: url(../images/cards/icons/card-green-link-icon.svg) center no-repeat;
   background-size: cover;
 }
 
@@ -1239,6 +1368,12 @@
   color: #153c2f;
 }
 
+.card-thirteen__answer-image {
+  width: 176px;
+  height: 237px;
+  border-radius: 4px;
+}
+
 .card-fourteen {
   order: 14;
   margin-right: 20px;
@@ -1254,8 +1389,18 @@
 }
 
 .card-fourteen .back {
-  background: #808080;
+  background-color: #1b4638;
   border-radius: 4px;
+}
+
+.card-fourteen .back .card-xs_content_bottom {
+  padding-bottom: 32px;
+}
+
+.card-fourteen__back-container {
+  align-items: flex-start;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .card-fourteen__title {
@@ -1285,14 +1430,37 @@
 }
 
 .card-fifteen .back {
-  background: #1b4638;
+  border: 1px solid #e1eeee;
   border-radius: 4px;
+}
+
+.card-fifteen .back .card-xs_content_bottom {
+  padding-bottom: 32px;
+}
+
+.card-fifteen .back .card-xs__image {
+  object-position: top left;
 }
 
 .card-fifteen__container {
   align-items: flex-start;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.card-fifteen__back-container {
+  align-items: flex-start;
+  padding-left: 32px;
+  padding-right: 25px;
+}
+
+.card-fifteen__back-text {
+  font-size: 20px;
+  line-height: 143.5%;
+}
+
+.card-fifteen .card-xs__back-text_last {
+  margin-bottom: 0;
 }
 
 .card-fifteen__link {
@@ -1334,10 +1502,20 @@
   border-radius: 4px;
 }
 
+.card-sixteen .back .card-xs_content_bottom {
+  padding-bottom: 32px;
+}
+
 .card-sixteen__container {
   align-items: flex-start;
   padding-left: 28px;
   padding-right: 20px;
+}
+
+.card-sixteen__back-container {
+  align-items: flex-start;
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 .card-sixteen__link {
@@ -1366,6 +1544,21 @@
   color: #1b4638;
 }
 
+.card-sixteen__meditations-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 23px;
+}
+
+.card-sixteen__meditations-item {
+  font-family: 'Sharp Grotesk DB Cyr Book 20';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: -0.418px;
+  color: #fff;
+}
+
 .card-seventeen {
   order: 17;
   margin-bottom: 21px;
@@ -1376,13 +1569,60 @@
   border-radius: 4px;
 }
 
+.card-seventeen__back-image {
+  border: 1px solid #e1eeee;
+  border-radius: 4px;
+}
+
 .card-seventeen__container {
-  padding-top: 64px;
+  padding-top: 142px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.card-seventeen__back-container {
+  padding: 0 48px 48px 48px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card-seventeen__description {
+  margin-bottom: 23px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.card-seventeen__title {
+  margin-bottom: 30px;
+  max-width: 673px;
+  font-size: 56px;
+  line-height: 61px;
 }
 
 .card-seventeen .back {
-  background: #1b4638;
   border-radius: 4px;
+}
+
+.card-seventeen__back-title {
+  margin-bottom: 24px;
+  max-width: 700px;
+  font-size: 42px;
+  line-height: 61px;
+  text-align: left;
+}
+
+.card-seventeen__back-text {
+  max-width: 100%;
+  margin-bottom: 12px;
+  font-size: 22px;
+  line-height: 150%;
+  text-align: left;
+  letter-spacing: -0.242px;
+}
+
+.card-seventeen .card-xl__back-text_last {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1920px) {
@@ -1394,6 +1634,16 @@
 }
 
 @media screen and (max-width: 1850px) {
+  .card-xs__answer-name {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .card-xs__answer-about {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
   .card-twelve__back-text {
     font-size: 18px;
     line-height: 26px;
@@ -1401,6 +1651,23 @@
 }
 
 @media screen and (max-width: 1800px) {
+  .card-xs__answer-text_hidden-xl {
+    display: none;
+  }
+
+  .card-xs__answer-container {
+    flex-direction: column;
+  }
+
+  .card-thirteen__answer-image {
+    width: 148px;
+    height: 200px;
+  }
+
+  .card-xs__answer-description {
+    margin-left: 0;
+  }
+
   .card-thirteen__review-text {
     font-size: 14px;
     line-height: 23px;
@@ -1408,6 +1675,10 @@
 }
 
 @media screen and (max-width: 1700px) {
+  .card-xs__button-text_hidden-xl {
+    display: none;
+  }
+
   .card-xl__back-description {
     margin-bottom: 170px;
   }
@@ -1440,6 +1711,48 @@
   .card-twelve__back-text {
     font-size: 17px;
     line-height: 22px;
+  }
+
+  .card-thirteen__answer-about {
+    max-width: 220px;
+  }
+
+  .card-thirteen__answer-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .card-fourteen__back-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .card-fifteen__back-text {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  .card-sixteen__meditations-item {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .card-seventeen__back-text {
+    max-width: 100%;
+    font-size: 22px;
+    line-height: 150%;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .card-seventeen__back-container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .card-seventeen .card-xl__back-text_last {
+    margin-bottom: 20px;
   }
 }
 
@@ -1637,15 +1950,35 @@
     order: 15;
   }
 
+  .card-fourteen__back-text {
+    font-size: 19px;
+    line-height: 27px;
+  }
+
   .card-fifteen {
     order: 16;
     margin-right: 0;
+  }
+
+  .card-fifteen__back-text {
+    font-size: 20px;
+    line-height: 143.5%;
   }
 
   .card-sixteen {
     order: 10;
     margin-right: 20px;
     width: calc(33% - 10px);
+  }
+
+  .card-seventeen__container {
+    padding-top: 99px;
+  }
+
+  .card-seventeen__back-text {
+    max-width: 100%;
+    font-size: 22px;
+    line-height: 150%;
   }
 }
 
@@ -1659,9 +1992,18 @@
     font-size: 15px;
     line-height: 24px;
   }
+
+  .card-fifteen__back-text {
+    font-size: 19px;
+    line-height: 25px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
+  .card-xs__button-text_hidden-xl {
+    display: inline;
+  }
+
   .card-xs-md {
     width: calc(50% - 10px);
   }
@@ -1834,18 +2176,67 @@
     line-height: 28px
   }
 
+  .card-xs__answer-name {
+    font-size: 24px;
+    line-height: 27.5px;
+  }
+
+  .card-xs__answer-about {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   .card-fourteen {
     order: 14;
     margin-right: 0;
+  }
+
+  .card-fourteen .back .card-xs_content_bottom {
+    padding-bottom: 24px;
+  }
+
+  .card-fourteen__back-text {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  .card-fifteen__back-container {
+    padding-left: 39px;
+    padding-right: 39px;
   }
 
   .card-sixteen {
     order: 10;
   }
 
+  .card-sixteen .back .card-xs_content_bottom {
+    padding-bottom: 48px;
+  }
+
   .card-sixteen__container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .card-sixteen__meditations-item {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .card-seventeen__text {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .card-seventeen__back-title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .card-seventeen__back-text {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -1974,9 +2365,23 @@
   .card-twelve .card-md__button {
     max-width: 220px;
   }
+
+  .card-fifteen__back-container {
+    padding-left: 33px;
+    padding-right: 32px;
+  }
+
+  .card-seventeen__back-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 960px) {
+  .card-xs__button-text_hidden-xl {
+    display: none;
+  }
+
   .card-sm__tags-item {
     font-size: 12px;
     line-height: 22px;
@@ -2041,6 +2446,43 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  .card-fourteen__back-text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .card-sixteen__meditations-item {
+    font-size: 21px;
+    line-height: 28px;
+  }
+
+  .card-seventeen__container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .card-seventeen__title {
+    max-width: 550px;
+    font-size: 48px;
+    line-height: 53px;
+  }
+
+  .card-seventeen__text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .card-seventeen__back-container {
+    padding-left: 46px;
+    padding-right: 25px;
+  }
+
+  .card-seventeen__back-text {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 880px) {
@@ -2048,6 +2490,14 @@
     padding-left: 30px;
     padding-right: 30px;
     max-width: 880px;
+  }
+
+  .card-xs__back-text_last {
+    margin-bottom: 30px;
+  }
+
+  .card-xs__button {
+    font-size: 15px;
   }
 
   .card-xl__back-text {
@@ -2091,6 +2541,17 @@
     font-size: 15px;
     line-height: 23px;
   }
+
+  .card-fourteen__back-text {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .card-seventeen__back-text {
+    max-width: 100%;
+    font-size: 17px;
+    line-height: 22px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2110,6 +2571,21 @@
 
   .cards {
     padding: 26px 20px 0;
+  }
+
+  .card-xs__answer-container {
+    margin-bottom: 15px;
+  }
+
+  .card-xs__answer-name {
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .card-xs__answer-about {
+    font-size: 15px;
+    line-height: 18px;
   }
 
   .card-smd {
@@ -2382,6 +2858,15 @@
     line-height: 22.5px;
   }
 
+  .card-thirteen .back .card-xs_content_top {
+    padding-top: 32px;
+  }
+
+  .card-thirteen__back-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .card-fourteen .card-xs_content_top {
     padding-top: 120px;
   }
@@ -2398,13 +2883,41 @@
     padding-bottom: 26px;
   }
 
+  .card-sixteen__meditations-item {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
   .card-seventeen {
     margin-bottom: 97px;
     height: 403px;
   }
 
   .card-seventeen__container {
-    padding: 33px 20px 0;
+    padding: 93px 20px 0;
+  }
+
+  .card-seventeen__description {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .card-seventeen__title {
+    margin-bottom: 15px;
+    max-width: 511px;
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .card-seventeen__text {
+    max-width: 690px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .card-seventeen__back-container {
+    padding: 0 30px 30px 30px;
   }
 
   .order-md-1 {
@@ -2588,9 +3101,19 @@
     padding-right: 20px;
   }
 
+  .card-seventeen__container {
+    padding-top: 63px;
+  }
+
   .card-seventeen__title {
-    max-width: 360px;
-    font-size: 28px;
+    max-width: 440px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .card-seventeen__text {
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
@@ -2807,6 +3330,26 @@
     font-size: 22px;
     line-height: 28px;
   }
+
+  .card-seventeen__container {
+    padding-top: 73px;
+  }
+
+  .card-seventeen__description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .card-seventeen__title {
+    max-width: 340px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .card-seventeen__text {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 
 @media screen and (max-width: 390px) {
@@ -3006,8 +3549,8 @@
     line-height: 15px;
   }
 
-  .card-seventeen {
-    height: 300px;
+  .card-seventeen__container {
+    padding-top: 53px;
   }
 
   .card-seventeen__description {
@@ -3017,6 +3560,11 @@
   .card-seventeen__title {
     max-width: 280px;
     font-size: 22px;
+  }
+
+  .card-seventeen__text {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 
@@ -3135,10 +3683,6 @@
   }
 
   .card-xl__link {
-    display: none;
-  }
-
-  .card-xl__description {
     display: none;
   }
 
@@ -3313,15 +3857,33 @@
 
   .card-seventeen {
     margin-bottom: 41px;
-    height: 153px;
+    height: 240px;
   }
 
   .card-seventeen__container {
-    padding-top: 9px;
+    align-items: flex-start;
+    padding-top: 16px;
+    padding-left: 12px;
+    padding-right: 5px;
+  }
+
+  .card-seventeen__description {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 15px;
   }
 
   .card-seventeen__title {
-    font-size: 14px;
-    line-height: 48px;
+    margin-bottom: 29px;
+    max-width: 262px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .card-seventeen__text {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
   }
 }
